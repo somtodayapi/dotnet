@@ -13,7 +13,7 @@ namespace SOMTodayUWP.Models
         public Item[] Items { get; set; }
     }
 
-    public partial class Item
+    public partial  class Item
     {
         [JsonProperty("additionalObjects")]
         public AdditionalObjects AdditionalObjects { get; set; }
