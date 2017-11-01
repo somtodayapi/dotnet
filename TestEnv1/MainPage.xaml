@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="TestEnv1.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TestEnv1"
+    xmlns:appmodel="using:Windows.ApplicationModel"
+    xmlns:viewModels="using:TestEnv1.ViewModel"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.DataContext>
+        <viewModels:MainPageViewModel x:Name="ViewModel" />
+    </Page.DataContext>
+
+    <Grid>
+
+        <NavigationView x:Name="NavView"
+                    ItemInvoked="NavView_ItemInvoked"
+                    SelectionChanged="NavView_SelectionChanged"
+                    Loaded="NavView_Loaded">
+
+            <NavigationView.MenuItems>
+                <NavigationViewItem Content="{x:Bind Path=ViewModel.Home, Mode=OneWay}" Tag="home">
+                    <NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE10F;"/>
+                    </NavigationViewItem.Icon>
+                </NavigationViewItem>
+                <NavigationViewItemSeparator/>
+                <NavigationViewItemHeader Content="Main pages"/>
+                <NavigationViewItem x:Name="gr" Icon="Character" Content="{x:Bind Path=ViewModel.Grade, Mode=OneWay}" Tag="cijfers"/>
+                <NavigationViewItem x:Name="sch" Icon="CalendarWeek" Content="{x:Bind Path=ViewModel.Rooster, Mode=OneWay}" Tag="rooster"/>
+                <NavigationViewItem x:Name="hw" Icon="Edit" Content="{x:Bind Path=ViewModel.Huiswerk, Mode=OneWay}" Tag="huiswerk"/>
+            </NavigationView.MenuItems>
+
+            <NavigationView.AutoSuggestBox>
+                <AutoSuggestBox x:Name="ASB" QueryIcon="Find"/>
+            </NavigationView.AutoSuggestBox>
+
+            <NavigationView.HeaderTemplate>
+                <DataTemplate x:DataType="viewModels:MainPageViewModel">
+                    <Grid Margin="20,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Style="{StaticResource TitleTextBlockStyle}"
+                           FontSize="28"
+                                   
+                           VerticalAlignment="Center"
+                           Text="{x:Bind Title, Mode=OneWay}"/>
+                        <CommandBar Grid.Column="1"
+                            HorizontalAlignment="Right"
+                            VerticalAlignment="Center"
+                            DefaultLabelPosition="Right"
+                            Background="{ThemeResource SystemControlBackgroundAltHighBrush}">
+                            <AppBarButton Label="Refresh" Icon="Refresh"/>
+                            <AppBarButton Label="Import" Icon="Import"/>
+                        </CommandBar>
+                    </Grid>
+                </DataTemplate>
+            </NavigationView.HeaderTemplate>
+
+            <NavigationView.PaneFooter>
+                <HyperlinkButton x:Name="MoreInfoBtn"
+                             Content="More info"
+                            
+                             Margin="12,0"/>
+            </NavigationView.PaneFooter>
+
+            <Frame x:Name="ContentFrame" Margin="24">
+                <Frame.ContentTransitions>
+                    <TransitionCollection>
+                        <NavigationThemeTransition/>
+                    </TransitionCollection>
+                </Frame.ContentTransitions>
+            </Frame>
+
+        </NavigationView>
+        <TextBlock x:Name="AppTitle" Style="{StaticResource CaptionTextBlockStyle}" Text="{x:Bind appmodel:Package.Current.DisplayName}" IsHitTestVisible="False"/>
+    </Grid>
+</Page>
