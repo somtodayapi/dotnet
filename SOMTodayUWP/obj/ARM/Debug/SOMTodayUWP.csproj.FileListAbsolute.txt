@@ -1,0 +1,17 @@
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\bin\ARM\Debug\SOMTodayUWP.dll
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\bin\ARM\Debug\SOMTodayUWP.pdb
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\bin\ARM\Debug\SOMTodayUWP.pri
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\SOMTodayUWP.csproj.CoreCompileInputs.cache
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\SOMTodayUWP.dll
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\SOMTodayUWP.pdb
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\priconfig.xml
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\priconfig.xml.intermediate
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\layout.resfiles
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\layout.resfiles.intermediate
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\resources.resfiles
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\resources.resfiles.intermediate
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\pri.resfiles
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\pri.resfiles.intermediate
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\qualifiers.txt
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\qualifiers.txt.intermediate
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt

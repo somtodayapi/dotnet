@@ -1,0 +1,2 @@
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\SOMTodayUWP.csproj;neutral
+C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\TestEnv1.csproj;x86
