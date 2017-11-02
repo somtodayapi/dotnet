@@ -2,12 +2,136 @@
     x:Class="TestEnv1.Views.Cijfer"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:TestEnv1.Views"
+    xmlns:local="using:TestEnv1.Views" 
+    xmlns:local1="using:TestEnv1.Model"  
+    xmlns:viewModels="using:TestEnv1.ViewModel"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="DetailContentTemplate" x:DataType="local1:CijferGem">
+            <StackPanel>
+                <TextBlock
+                    Margin="0,8"
+                    Style="{ThemeResource TitleTextBlockStyle}"
+                    HorizontalAlignment="Left"
+                    Text="{x:Bind Vaknaam}"/>
 
+                <TextBlock
+                    Margin="0,9"
+                    HorizontalAlignment="Left"
+                    MaxWidth="560"
+                    Style="{ThemeResource BodyTextBlockStyle}"
+                    Text="{x:Bind Gem}" />
+            </StackPanel>
+        </DataTemplate>
+    </Page.Resources>
+    <Page.DataContext>
+        <viewModels:CijferViewModel x:Name="viewMod" />
+    </Page.DataContext>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveStates" CurrentStateChanged="AdaptiveStates_CurrentStateChanged">
+                <VisualState x:Name="DefaultState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="720" />
+                    </VisualState.StateTriggers>
+                </VisualState>
 
+                <VisualState x:Name="NarrowState">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="0" />
+                    </VisualState.StateTriggers>
+
+                    <VisualState.Setters>
+                        <Setter Target="MasterColumn.Width" Value="*" />
+                        <Setter Target="DetailColumn.Width" Value="0" />
+                        <Setter Target="MasterListView.SelectionMode" Value="None" />
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition x:Name="MasterColumn" Width="375" />
+            <ColumnDefinition x:Name="DetailColumn" Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <ListView
+            x:Name="MasterListView"
+            Grid.Row="1"
+            ItemContainerTransitions="{x:Null}"
+            ItemsSource="{x:Bind viewMod.Cijfers}"
+            IsItemClickEnabled="True"      >
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListView.ItemContainerStyle>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="local1:CijferGem">
+                    <Grid Height="70"  VerticalAlignment="Center" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition Width="Auto" MinWidth="136" />
+                        </Grid.ColumnDefinitions>
+                        <MenuFlyoutSeparator Grid.Row="2" Grid.ColumnSpan="2"/>
+
+                        <TextBlock Foreground="Black" HorizontalAlignment="Center" FontSize="16" Text="{x:Bind Vaknaam}" Style="{ThemeResource BaseTextBlockStyle}" />
+
+                        <TextBlock
+                    Text="{x:Bind Laatste_Cijfer}"
+             HorizontalAlignment="Center"
+                    Grid.Row="1"
+                    MaxLines="1"
+                    Style="{ThemeResource CaptionTextBlockStyle}" FontSize="15" Foreground="#FF3C3939" >
+
+                        </TextBlock>
+
+                        <TextBlock
+                    Text="{x:Bind Gem}"
+                      Foreground="Black"
+                     Grid.Column="1" 
+             HorizontalAlignment="Center" VerticalAlignment="Center"   FontSize="17" 
+                    Style="{ThemeResource TitleTextBlockStyle}" FontWeight="Bold"  />
+                        <TextBlock
+                    Text="Gemiddeld"
+                      Foreground="Black"
+                     Grid.Column="1" 
+            Grid.Row="1"
+             HorizontalAlignment="Center" VerticalAlignment="Center"   FontSize="17" 
+                    Style="{ThemeResource SubtitleTextBlockStyle}"   />
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
+        <ContentPresenter
+            x:Name="DetailContentPresenter"
+            Grid.Column="1"
+            Grid.RowSpan="2"
+            BorderThickness="1,0,0,0"
+            Padding="24,0"
+            BorderBrush="{ThemeResource SystemControlForegroundBaseLowBrush}"
+            Content="{x:Bind MasterListView.SelectedItem, Mode=OneWay}"
+            ContentTemplate="{StaticResource DetailContentTemplate}">
+            <ContentPresenter.ContentTransitions>
+                <!-- Empty by default. See MasterListView_ItemClick -->
+                <TransitionCollection />
+            </ContentPresenter.ContentTransitions>
+        </ContentPresenter>
     </Grid>
+    
+    
 </Page>

@@ -59,7 +59,7 @@ namespace TestEnv1
             }
             else
             {
-                gr.IsEnabled = false;
+               
                 hw.IsEnabled = false;
                 sch.IsEnabled = false;
             }
