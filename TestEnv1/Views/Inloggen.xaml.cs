@@ -5,6 +5,8 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Globalization;
+using Windows.System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,6 +27,26 @@ namespace TestEnv1.Views
         public Inloggen()
         {
             this.InitializeComponent();
+            NavigationCacheMode = NavigationCacheMode.Enabled;
+         
+        }
+
+     
+
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            string text = ((sender as ComboBox).SelectedItem as ComboBoxItem).Content as string;
+            if (text == "Dutch")
+            {
+    ApplicationLanguages.PrimaryLanguageOverride = "nl";
+            Frame.Navigate(this.GetType());
+            }
+            else
+            {
+                ApplicationLanguages.PrimaryLanguageOverride = "en";
+                Frame.Navigate(this.GetType());
+            }
+        
         }
     }
 }

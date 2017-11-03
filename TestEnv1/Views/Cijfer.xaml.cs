@@ -45,6 +45,7 @@ namespace TestEnv1.Views
 
             UpdateForVisualState(AdaptiveStates.CurrentState);
 
+            
             // Don't play a content transition for first item load.
             // Sometimes, this content will be animated as part of the page transition.
             DisableContentTransitions();

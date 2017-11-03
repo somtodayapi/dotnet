@@ -255,6 +255,17 @@
           "ref/uap10.0.15138/netstandard.dll": {}
         }
       },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.1": {
         "type": "package",
         "dependencies": {
@@ -971,6 +982,23 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Template10/1.1.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Template10.targets": {}
+        }
+      },
       "SOMTodayUWP/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -1240,6 +1268,17 @@
           "ref/uap10.0.15138/WindowsBase.dll": {},
           "ref/uap10.0.15138/mscorlib.dll": {},
           "ref/uap10.0.15138/netstandard.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "NETStandard.Library/2.0.1": {
@@ -2332,6 +2371,23 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Template10/1.1.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Template10.targets": {}
+        }
+      },
       "SOMTodayUWP/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -2601,6 +2657,17 @@
           "ref/uap10.0.15138/WindowsBase.dll": {},
           "ref/uap10.0.15138/mscorlib.dll": {},
           "ref/uap10.0.15138/netstandard.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "NETStandard.Library/2.0.1": {
@@ -3724,6 +3791,23 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Template10/1.1.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Template10.targets": {}
+        }
+      },
       "SOMTodayUWP/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -3993,6 +4077,17 @@
           "ref/uap10.0.15138/WindowsBase.dll": {},
           "ref/uap10.0.15138/mscorlib.dll": {},
           "ref/uap10.0.15138/netstandard.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "NETStandard.Library/2.0.1": {
@@ -5085,6 +5180,23 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Template10/1.1.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Template10.targets": {}
+        }
+      },
       "SOMTodayUWP/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -5354,6 +5466,17 @@
           "ref/uap10.0.15138/WindowsBase.dll": {},
           "ref/uap10.0.15138/mscorlib.dll": {},
           "ref/uap10.0.15138/netstandard.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "NETStandard.Library/2.0.1": {
@@ -6477,6 +6600,23 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Template10/1.1.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Template10.targets": {}
+        }
+      },
       "SOMTodayUWP/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -6746,6 +6886,17 @@
           "ref/uap10.0.15138/WindowsBase.dll": {},
           "ref/uap10.0.15138/mscorlib.dll": {},
           "ref/uap10.0.15138/netstandard.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "NETStandard.Library/2.0.1": {
@@ -7838,6 +7989,23 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
+      "Template10/1.1.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Template10.targets": {}
+        }
+      },
       "SOMTodayUWP/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -8107,6 +8275,17 @@
           "ref/uap10.0.15138/WindowsBase.dll": {},
           "ref/uap10.0.15138/mscorlib.dll": {},
           "ref/uap10.0.15138/netstandard.dll": {}
+        }
+      },
+      "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Microsoft.Xaml.Interactions.dll": {},
+          "lib/uap10.0/Microsoft.Xaml.Interactivity.dll": {}
         }
       },
       "NETStandard.Library/2.0.1": {
@@ -9228,6 +9407,23 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
+        }
+      },
+      "Template10/1.1.12": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
+          "Microsoft.Xaml.Behaviors.Uwp.Managed": "1.1.0",
+          "Newtonsoft.Json": "8.0.3"
+        },
+        "compile": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Template10Library.dll": {}
+        },
+        "build": {
+          "build/uap10.0/Template10.targets": {}
         }
       },
       "SOMTodayUWP/1.0.0": {
@@ -11577,6 +11773,23 @@
         "ref/uap10.0.15138/mscorlib.dll",
         "ref/uap10.0.15138/netstandard.dll",
         "runtime.json"
+      ]
+    },
+    "Microsoft.Xaml.Behaviors.Uwp.Managed/1.1.0": {
+      "sha512": "Qxe4fblviCn2oFf7C4ahCsZHC0GzRa7Tz5z+L1QUHUljY3Oj/TMoT1O0jJ+ru6RcJ9qS8yFw/jIvstg2dxxpGA==",
+      "type": "package",
+      "path": "microsoft.xaml.behaviors.uwp.managed/1.1.0",
+      "files": [
+        "lib/uap10.0/Design/Microsoft.Xaml.Interactions.Design.dll",
+        "lib/uap10.0/Design/Microsoft.Xaml.Interactivity.Design.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.pri",
+        "lib/uap10.0/Microsoft.Xaml.Interactions.xml",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.dll",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.pri",
+        "lib/uap10.0/Microsoft.Xaml.Interactivity.xml",
+        "microsoft.xaml.behaviors.uwp.managed.1.1.0.nupkg.sha512",
+        "microsoft.xaml.behaviors.uwp.managed.nuspec"
       ]
     },
     "NETStandard.Library/2.0.1": {
@@ -15708,6 +15921,26 @@
         "system.xml.xmldocument.nuspec"
       ]
     },
+    "Template10/1.1.12": {
+      "sha512": "FTvwISozoKs5syQkwaHl/s8iPts23Q+VFjTbnNnA+ad6MHqP5bOiq3ibjEXHGJkN5nSKY7FoMH4W1/aCS1n/ew==",
+      "type": "package",
+      "path": "template10/1.1.12",
+      "files": [
+        "build/uap10.0/Template10.targets",
+        "lib/uap10.0/Template10Library.dll",
+        "lib/uap10.0/Template10Library.pri",
+        "lib/uap10.0/Template10Library/Controls/HamburgerMenu.xaml",
+        "lib/uap10.0/Template10Library/Properties/Template10Library.rd.xml",
+        "lib/uap10.0/Template10Library/Template10Library.xr.xml",
+        "lib/uap10.0/Template10Library/Themes/Generic.xaml",
+        "lib/uap10.0/Template10Library/Themes/HamburgerMenu.xaml",
+        "lib/uap10.0/Template10Library/Themes/ModalDialog.xaml",
+        "lib/uap10.0/Template10Library/Themes/PageHeader.xaml",
+        "lib/uap10.0/Template10Library/Themes/Resizer.xaml",
+        "template10.1.1.12.nupkg.sha512",
+        "template10.nuspec"
+      ]
+    },
     "SOMTodayUWP/1.0.0": {
       "type": "project",
       "path": "../SOMTodayUWP/SOMTodayUWP.csproj",
@@ -15717,7 +15950,8 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.0.1",
-      "SOMTodayUWP >= 1.0.0"
+      "SOMTodayUWP >= 1.0.0",
+      "Template10 >= 1.1.12"
     ]
   },
   "packageFolders": {
@@ -15760,6 +15994,10 @@
           "Microsoft.NETCore.UniversalWindowsPlatform": {
             "target": "Package",
             "version": "6.0.1"
+          },
+          "Template10": {
+            "target": "Package",
+            "version": "1.1.12"
           }
         },
         "imports": [

@@ -31,13 +31,21 @@
     <AppXManifest Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-02T00:36:05.006</Modified>
+      <Modified>2017-11-02T22:38:11.354</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\TestEnv1.exe">
       <PackagePath>entrypoint\TestEnv1.exe</PackagePath>
-      <Modified>2017-11-02T00:36:03.523</Modified>
+      <Modified>2017-11-02T22:38:09.194</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+      <Modified>2016-02-22T12:59:50.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+      <Modified>2016-02-22T12:59:50.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
@@ -703,13 +711,17 @@
       <PackagePath>System.Linq.Dynamic.Core.dll</PackagePath>
       <Modified>2017-10-27T20:52:56.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library.dll">
+      <PackagePath>Template10Library.dll</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\bin\Debug\SOMTodayUWP.dll">
       <PackagePath>SOMTodayUWP.dll</PackagePath>
-      <Modified>2017-11-01T23:59:44.445</Modified>
+      <Modified>2017-11-02T22:24:47.428</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-11-01T19:42:14.747</Modified>
+    <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Assets\logo_som.png">
+      <PackagePath>Assets\logo_som.png</PackagePath>
+      <Modified>2017-11-02T19:35:04.721</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -745,22 +757,58 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-10-30T20:58:12.102</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+      <Modified>2017-11-01T19:42:14.747</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\TestEnv1.xr.xml">
       <PackagePath>TestEnv1.xr.xml</PackagePath>
-      <Modified>2017-11-02T00:18:34.739</Modified>
+      <Modified>2017-11-02T22:37:31.638</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-09-28T16:28:16.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Template10Library.xr.xml">
+      <PackagePath>Template10Library\Template10Library.xr.xml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Controls\HamburgerMenu.xaml">
+      <PackagePath>Template10Library\Controls\HamburgerMenu.xaml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Properties\Template10Library.rd.xml">
+      <PackagePath>Template10Library\Properties\Template10Library.rd.xml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\Generic.xaml">
+      <PackagePath>Template10Library\Themes\Generic.xaml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\HamburgerMenu.xaml">
+      <PackagePath>Template10Library\Themes\HamburgerMenu.xaml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\ModalDialog.xaml">
+      <PackagePath>Template10Library\Themes\ModalDialog.xaml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\PageHeader.xaml">
+      <PackagePath>Template10Library\Themes\PageHeader.xaml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\Resizer.xaml">
+      <PackagePath>Template10Library\Themes\Resizer.xaml</PackagePath>
+      <Modified>2016-10-17T09:42:00.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-02T00:36:04.558</Modified>
+      <Modified>2017-11-02T22:38:10.548</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\Core\TestEnv1.exe">
       <PackagePath>TestEnv1.exe</PackagePath>
-      <Modified>2017-11-02T00:36:04.995</Modified>
+      <Modified>2017-11-02T22:38:11.341</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

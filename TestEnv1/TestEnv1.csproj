@@ -95,12 +95,25 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Exceptions\AccesTokenExpiredException.cs" />
+    <Compile Include="Exceptions\LoginFailedException.cs" />
+    <Compile Include="Helper\AppClientUtil.cs" />
+    <Compile Include="Helper\ExceptionHandler.cs" />
+    <Compile Include="Helper\ISettings.cs" />
+    <Compile Include="Helper\Settings.cs" />
+    <Compile Include="Helper\Resources.cs" />
+    <Compile Include="Helper\SettingsService.cs" />
+    <Compile Include="Helper\UpdateStatus.cs" />
+    <Compile Include="Helper\Uti\AsyncSynchronizationContext.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Model\CijferGem.cs" />
+    <Compile Include="Model\School_Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Exceptions\ApiNonRecoverableException.cs" />
     <Compile Include="ViewModel\CijferViewModel.cs" />
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MainPageViewModel.cs" />
     <Compile Include="Views\Cijfer.xaml.cs">
       <DependentUpon>Cijfer.xaml</DependentUpon>
@@ -121,6 +134,7 @@
     <None Include="TestEnv1_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\logo_som.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -139,6 +153,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Styles\Custom.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
     <Page Include="Views\Cijfer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -156,12 +175,18 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Template10">
+      <Version>1.1.12</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SOMTodayUWP\SOMTodayUWP.csproj">
       <Project>{3380aef4-74f8-4051-8bb1-b10c889081dd}</Project>
       <Name>SOMTodayUWP</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model\NewFolder1\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

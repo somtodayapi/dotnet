@@ -33,3 +33,4 @@ C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\Debug\pri.resfiles.interm
 C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\Debug\qualifiers.txt
 C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\Debug\qualifiers.txt.intermediate
 C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\obj\Debug\SOMTodayUWP.csprojResolveAssemblyReference.cache

@@ -28,6 +28,12 @@
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\TestEnv1.exe">
       <PackagePath>entrypoint\TestEnv1.exe</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
+      <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactivity.dll">
+      <PackagePath>Microsoft.Xaml.Interactivity.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\newtonsoft.json\10.0.3\lib\netstandard1.3\Newtonsoft.Json.dll">
       <PackagePath>Newtonsoft.Json.dll</PackagePath>
     </AppxPackagedFile>
@@ -526,11 +532,14 @@
     <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\system.linq.dynamic.core\1.0.7.10\lib\netstandard1.3\System.Linq.Dynamic.Core.dll">
       <PackagePath>System.Linq.Dynamic.Core.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library.dll">
+      <PackagePath>Template10Library.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\bin\Debug\SOMTodayUWP.dll">
       <PackagePath>SOMTodayUWP.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Assets\logo_som.png">
+      <PackagePath>Assets\logo_som.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -559,11 +568,38 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\TestEnv1.xr.xml">
       <PackagePath>TestEnv1.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Template10Library.xr.xml">
+      <PackagePath>Template10Library\Template10Library.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Controls\HamburgerMenu.xaml">
+      <PackagePath>Template10Library\Controls\HamburgerMenu.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Properties\Template10Library.rd.xml">
+      <PackagePath>Template10Library\Properties\Template10Library.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\Generic.xaml">
+      <PackagePath>Template10Library\Themes\Generic.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\HamburgerMenu.xaml">
+      <PackagePath>Template10Library\Themes\HamburgerMenu.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\ModalDialog.xaml">
+      <PackagePath>Template10Library\Themes\ModalDialog.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\PageHeader.xaml">
+      <PackagePath>Template10Library\Themes\PageHeader.xaml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\template10\1.1.12\lib\uap10.0\Template10Library\Themes\Resizer.xaml">
+      <PackagePath>Template10Library\Themes\Resizer.xaml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>

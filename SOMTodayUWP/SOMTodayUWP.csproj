@@ -106,6 +106,7 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="GetSchools.cs" />
     <Compile Include="Grades\GetAllGrades.cs" />
     <Compile Include="Grades\GetCurrentGrades.cs" />
     <Compile Include="Grades\GetLatestGrades.cs" />
@@ -117,6 +118,7 @@
     <Compile Include="Models\Grades\ToetsCijferVak.cs" />
     <Compile Include="Models\oAuthJSON.cs" />
     <Compile Include="Models\oAuthModel.cs" />
+    <Compile Include="Models\Schols.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\SOMTodayUWP.rd.xml" />
   </ItemGroup>

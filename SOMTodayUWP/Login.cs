@@ -73,6 +73,7 @@ namespace SOMTodayUWP
                                 string jso = await sr.ReadToEndAsync();
                                 //Deserialize JSON and put in list for api USERS to use easily.
                                 resultMod = JsonConvert.DeserializeObject<oAuthJSON>((jso));
+                                resultMod.loggedin = true;
                             }
                         }
                     }

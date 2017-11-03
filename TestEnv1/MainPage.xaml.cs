@@ -27,8 +27,10 @@ namespace TestEnv1
         public MainPageViewModel viewModel;
         public MainPage()
         {
+           
             ApplicationLanguages.PrimaryLanguageOverride = "nl";
             this.InitializeComponent();
+           
             viewModel = new MainPageViewModel();
 
         }
@@ -39,6 +41,16 @@ namespace TestEnv1
         }
         private void NavView_Loaded(object sender, RoutedEventArgs e)
         {
+            if (isLoggedin() == false)
+            {
+                this.Frame.Navigate(typeof(Views.Inloggen));
+            }
+            else
+            {
+                gr.IsEnabled = false;
+                hw.IsEnabled = false;
+                sch.IsEnabled = false;
+            }
             // you can also add items in code behind
             NavView.MenuItems.Add(new NavigationViewItemSeparator());
             NavView.MenuItems.Add(new NavigationViewItem()
@@ -53,16 +65,7 @@ namespace TestEnv1
                     break;
                 }
             }
-            if (isLoggedin() == true)
-            {
-
-            }
-            else
-            {
-               
-                hw.IsEnabled = false;
-                sch.IsEnabled = false;
-            }
+           
         }
 
         private void NavView_ItemInvoked(NavigationView sender, NavigationViewItemInvokedEventArgs args)
@@ -76,7 +79,7 @@ namespace TestEnv1
                 switch (args.InvokedItem)
                 {
                     case "Home":
-                        ContentFrame.Navigate(typeof(Views.Cijfer));
+                        ContentFrame.Navigate(typeof(Views.Inloggen));
                         break;
 
                     case "cijfer":
@@ -112,7 +115,7 @@ namespace TestEnv1
                 switch (item.Tag)
                 {
                     case "home":
-                        ContentFrame.Navigate(typeof(Views.Cijfer));
+                        ContentFrame.Navigate(typeof(Views.Inloggen));
                         break;
 
                     case "huiswerk":
