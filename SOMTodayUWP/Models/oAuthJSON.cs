@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SOMTodayUWP.Models
 {
-    public  class oAuthJSON
+    public  class AccountMeJSON
     {
         [JsonProperty("access_token")]
         public string access_token { get; set; }

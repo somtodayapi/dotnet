@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Template10.Mvvm;
 using Template10.Services.NavigationService;
+using TestEnv1.Helper;
 using Windows.ApplicationModel.Resources;
 using Windows.Globalization;
 using Windows.UI.Xaml.Navigation;
@@ -15,9 +16,6 @@ namespace TestEnv1.ViewModel
 {
     public class MainPageViewModel : ViewModelBase
     {
-        ResourceLoader loader = new ResourceLoader("Strings");
-
-
         private string title { get; set; }
         private string grades { get; set; }
         private string hw { get; set; }
@@ -38,47 +36,17 @@ namespace TestEnv1.ViewModel
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode,
             IDictionary<string, object> suspensionState)
         {
-            Home = loader.GetString("home_str");
-            Grade = loader.GetString("grad_item");
-            Huiswerk = loader.GetString("hw_item");
-            Rooster = loader.GetString("sch_item");
-            Vakken = loader.GetString("vakk");
+            Home = Resources.CodeResources.GetString("home_str");
+            Grade = Resources.CodeResources.GetString("grad_item");
+            Huiswerk = Resources.CodeResources.GetString("hw_item");
+            Rooster = Resources.CodeResources.GetString("sch_item");
+            Vakken = Resources.CodeResources.GetString("vakk");
             #region date
-            if (DateTime.Now.Hour < 12)
-            {
-                //Morning
-                if (isLoggedin() == true)
-                {
-                }
-                else
-                    Title = loader.GetString("goodmor") + ", " + loader.GetString("sign_in_com");
-            }
-            else if (DateTime.Now.Hour < 17)
-            {
-                //Afternoon
-                if (isLoggedin() == true)
-                {
-                }
-                else
-                    Title = loader.GetString("goodaft") + ", " + loader.GetString("sign_in_com");
-            }
-            else
-            {
-                //Evening
-                if (isLoggedin() == true)
-                {
-                }
-                else
-                    Title = loader.GetString("goodev") + ", " + loader.GetString("sign_in_com");
-            }
+            Title = "Hallo, " + AppClientUtil.Profile.roepnaam + "!"; 
             #endregion
 
             await Task.CompletedTask;
         }
-
-        public MainPageViewModel()
-        {
-           }
         #region binable_ars
         public string Username
         {

@@ -30,9 +30,9 @@ namespace TestEnv1.ViewModel
         }
         public async void executeshit()
         {
-            var ret = await SOMTodayUWP.Grades.GetCurrentGrades.GetGrades(api_url, access_token);
+         //   var ret = await SOMTodayUWP.Grades.GetCurrentGrades.GetGrades(api_url, access_token);
 
-            foreach (var item1 in ret)
+         /*   foreach (var item1 in ret)
             {
                 List<Item> newList = item1.ToList();
 
@@ -52,7 +52,7 @@ namespace TestEnv1.ViewModel
                     }
                 }
 
-            }
+            }*/
         }
     
         public ObservableCollection<Model.CijferGem> Cijfers

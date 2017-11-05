@@ -39,9 +39,9 @@ namespace SOMTodayUWP
         /// <param name="GUID">GUID is an id that's linked to your school. This GUID can be found at https://servers.somtoday.nl/organisaties.json</param>
         /// <param name="username">Username used to login into SOMToday</param>
         /// <param name="password">Password used to login into SOMToday</param>
-        public static async Task<oAuthJSON> Authorize(string GUID, string username, string password)
+        public static async Task<AccountMeJSON> Authorize(string GUID, string username, string password)
         {
-            oAuthJSON resultMod = new oAuthJSON();
+            AccountMeJSON resultMod = new AccountMeJSON();
 
             //First check if internet connection is available before doing anything at all
             if (IsInternet())
@@ -72,7 +72,7 @@ namespace SOMTodayUWP
                             {
                                 string jso = await sr.ReadToEndAsync();
                                 //Deserialize JSON and put in list for api USERS to use easily.
-                                resultMod = JsonConvert.DeserializeObject<oAuthJSON>((jso));
+                                resultMod = JsonConvert.DeserializeObject<AccountMeJSON>((jso));
                                 resultMod.loggedin = true;
                             }
                         }

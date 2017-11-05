@@ -59,7 +59,7 @@ namespace TestEnv1
         {
             if (args.IsSettingsInvoked)
             {
-                ContentFrame.Navigate(typeof(Views.Cijfer));
+                ContentFrame.Navigate(typeof(Views.Home));
             }
             else
             {
@@ -104,7 +104,7 @@ namespace TestEnv1
                 switch (item.Tag)
                 {
                     case "home":
-                        ContentFrame.Navigate(typeof(Views.Inloggen));
+                        ContentFrame.Navigate(typeof(Views.Home));
                         break;
 
                     case "huiswerk":

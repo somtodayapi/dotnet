@@ -34,9 +34,6 @@ namespace TestEnv1.ViewModel
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode,
             IDictionary<string, object> suspensionState)
         {
-      
-
-
             Title = Resources.CodeResources.GetString("Title");
             Sub = Resources.CodeResources.GetString("Sub");
             Paragraph = Resources.CodeResources.GetString("Paragraph");

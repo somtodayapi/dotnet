@@ -27,18 +27,17 @@ namespace SOMTodayUWP.Grades
         /// </summary>
         /// <param name="apiURL">Api url which is returned when signing.</param>
         /// <param name="AccesToken">Acces Token which is returned when signing in</param>
+        /// <param name="pupilId">Pupil id. Can be found through the account/me endpoint.</param>
         /// <returns>Returns ObservableCollection of IGrouping. String is key(subject) and item is grade. These can be put in a loop. Examples can be found at docs.</returns>
-        public static async Task<ObservableCollection<IGrouping<string, Item>>> GetGrades(string apiURL, string AccesToken)
+        public static async Task<ObservableCollection<IGrouping<string, Item>>> GetGrades(string apiURL, string AccesToken, string pupilId)
         {
             var obs = new ObservableCollection<IGrouping<string, Item>>();
-            string pupilID = await getPupilID(apiURL, AccesToken);
-
             //Init httpClient
             HttpClient httpClient = new HttpClient();
             //Set headers
             httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AccesToken);
             httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            string loginUrl = apiURL + "/rest/v1/resultaten/huidigVoorLeerling/" + pupilID;
+            string loginUrl = apiURL + "/rest/v1/resultaten/huidigVoorLeerling/" + pupilId;
             //Execute function and read
             HttpResponseMessage response = await httpClient.GetAsync(loginUrl);
             string resp = await response.Content.ReadAsStringAsync();
@@ -52,29 +51,6 @@ namespace SOMTodayUWP.Grades
                 obs.Add(lit);
             }
             return obs;
-        }
-
-        private static async Task AddData(Item data)
-        {
-            var id = data.Vak.Naam;
-            ToetsCijferVak newGroup = new ToetsCijferVak();
-
-
-        }
-        private static async Task<string> getPupilID(string apiUrl, string accesToken)
-        {
-            //Init httpClient
-            HttpClient httpClient = new HttpClient();
-            //Set headers
-            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accesToken);
-            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            string loginUrl = apiUrl + "/rest/v1/account/me";
-            //Execute function and read
-            HttpResponseMessage response = await httpClient.GetAsync(loginUrl);
-            string resp = await response.Content.ReadAsStringAsync();
-            //Deserialize
-            var links = JsonConvert.DeserializeObject<RootObject>(resp).persoon.links[0].id;
-            return links.ToString();
-        }
+        }    
     }
 }

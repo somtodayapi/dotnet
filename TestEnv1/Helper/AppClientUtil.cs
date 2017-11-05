@@ -23,49 +23,28 @@ using Windows.UI.Popups;
 namespace TestEnv1.Helper
 {
     /// <summary>
-
     ///     Static class containing game's state and wrapped client methods to update data
-
     /// </summary>
-
     public static class AppClientUtil
-
-    {
-
-        
+    {   
         #region Client Vars
         private static ISettings _clientSettings;
         private static Login.SOMLOgin _client = new Login.SOMLOgin();
+        public static Persoon Profile { get; private set; }
         #endregion
-
-
         #region Collections
-
-
-
         /// <summary>
-
         ///		Collection of recent cijfers
-
         /// </summary>
-
         public static ObservableCollection<ObservableCollection<IGrouping<string, Item>>> RecentCijfers { get; set; } =
-
-            new ObservableCollection<ObservableCollection<IGrouping<string, Item>>>();
-
-
-
+           new ObservableCollection<ObservableCollection<IGrouping<string, Item>>>();
         #endregion
-
         #region Constructor
-
         static AppClientUtil()
-        {
-           
+        {          
             RecentCijfers.CollectionChanged += Grade_Changed;
             // TODO: Investigate whether or not this needs to be unsubscribed when the app closes.
-        }
-    
+        } 
         /// <summary>
         /// When new grades are added to the List
         /// </summary>
@@ -123,7 +102,6 @@ namespace TestEnv1.Helper
                 return false;
             }
         }
-
         /// <summary>
         /// Loads current AccessToken
         /// </summary>
@@ -148,12 +126,10 @@ namespace TestEnv1.Helper
                 return "";
             }
         }
-
         private static string GetApiUrl()
         {
             return SettingsService.Instance.ApiUrl;
         }
-
         /// <summary>
         ///     Sets things up if we didn't come from the login page
         /// </summary>
@@ -176,6 +152,7 @@ namespace TestEnv1.Helper
             try
             {
                 await _client.DoLogin(SettingsService.Instance.Uuid,SettingsService.Instance.UserCredentials.UserName, SettingsService.Instance.UserCredentials.Password);
+               await UpdateProfile();
             }
             catch (Exception e)
             {
@@ -184,14 +161,24 @@ namespace TestEnv1.Helper
                     Debug.WriteLine("AccessTokenExpired Exception caught");
                     _client.access_token = "0";
                     await _client.DoLogin(SettingsService.Instance.Uuid, SettingsService.Instance.UserCredentials.UserName, SettingsService.Instance.UserCredentials.Password);
+                    await UpdateProfile();
                 }
                 else
                 {
                     // from inside any window
+                    await UpdateProfile();
                     var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
                     nav.Navigate(typeof(Views.Inloggen));
                 }
             }
+        }
+        /// <summary>
+        ///     Gets user's profile
+        /// </summary>
+        /// <returns></returns>
+        public static async Task UpdateProfile()
+        {
+          Profile = (await _client.GetUserInfo(SettingsService.Instance.ApiUrl, SettingsService.Instance.AccessTokenString));
         }
         /// <summary>
         /// Handles login
@@ -218,10 +205,10 @@ namespace TestEnv1.Helper
             SettingsService.Instance.UserCredentials =
                 new PasswordCredential(uuid, username, password);
             SettingsService.Instance.Uuid = uuid;
+            await UpdateProfile();
             // Return true if login worked, meaning that we have a token
             return true;
         }
-
         /// <summary>
         ///     Logs the user out by clearing data
         /// </summary>
@@ -232,10 +219,8 @@ namespace TestEnv1.Helper
             if (!SettingsService.Instance.RememberLoginData)
                SettingsService.Instance.UserCredentials = null;
         }
-
         #endregion
         #endregion
-
     }
 
 }
