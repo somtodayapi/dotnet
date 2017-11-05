@@ -84,13 +84,14 @@
                         Style="{ThemeResource ButtonSubmitRed}"
                         Margin="15,0,15,15"
                         Width="100"
+                        Command="{Binding DoSOMLogin}"
                         Background="White"
                                                                  
                         IsEnabled="True"
                         HorizontalAlignment="Left"
                           Foreground="#00A875" FontWeight="Bold" FontFamily="Arial Black" >
                     </Button>
-                    <ComboBox x:ConnectionId='8' x:Name="School" Style="{StaticResource ComboBoxStyle1}"                                                                                                        >
+                    <ComboBox x:ConnectionId='8'   x:Name="School" Style="{StaticResource ComboBoxStyle1}"                                                                                                                                                                            >
                         <ComboBox.ItemContainerStyle>
                             <Style TargetType="FrameworkElement">
                                 <Setter Property="Margin" Value="2"/>

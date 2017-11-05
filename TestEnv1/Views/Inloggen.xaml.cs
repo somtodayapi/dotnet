@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -31,11 +32,9 @@ namespace TestEnv1.Views
          
         }
 
-     
-
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string text = ((sender as ComboBox).SelectedItem as ComboBoxItem).Content as string;
+             string text = ((sender as ComboBox).SelectedItem as ComboBoxItem).Content as string;
             if (text == "Dutch")
             {
     ApplicationLanguages.PrimaryLanguageOverride = "nl";

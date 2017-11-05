@@ -10,8 +10,6 @@ using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-using Template10.Mvvm;
-using Template10.Services.NavigationService;
 using TestEnv1.Exceptions;
 using TestEnv1.Helper;
 using Windows.ApplicationModel.Resources;
@@ -20,7 +18,7 @@ using Windows.UI.Xaml.Navigation;
 
 namespace TestEnv1.ViewModel
 {
-    class LoginViewModel : ViewModelBase
+    class LoginViewModel : Template10.Mvvm.ViewModelBase
     {
       
    
@@ -36,6 +34,9 @@ namespace TestEnv1.ViewModel
         public override async Task OnNavigatedToAsync(object parameter, NavigationMode mode,
             IDictionary<string, object> suspensionState)
         {
+      
+
+
             Title = Resources.CodeResources.GetString("Title");
             Sub = Resources.CodeResources.GetString("Sub");
             Paragraph = Resources.CodeResources.GetString("Paragraph");
@@ -74,10 +75,16 @@ namespace TestEnv1.ViewModel
                 Username = currentCredentials.UserName;
                 Password = currentCredentials.Password;
             }
-
-            
-      
             await Task.CompletedTask;
+        }
+        private Instellingen _SelectedComboboxItem;
+        public Instellingen SelectedComboboxItem
+        {
+            get { return _SelectedComboboxItem; }
+            set
+            {
+                Set(ref _SelectedComboboxItem, value);
+            }
         }
 
         /// <summary>
@@ -96,7 +103,7 @@ namespace TestEnv1.ViewModel
             await Task.CompletedTask;
         }
 
-        public override async Task OnNavigatingFromAsync(NavigatingEventArgs args)
+        public override async Task OnNavigatingFromAsync(Template10.Services.NavigationService.NavigatingEventArgs args)
         {
             args.Cancel = false;
             await Task.CompletedTask;
@@ -284,27 +291,29 @@ namespace TestEnv1.ViewModel
 
 
 
+
         #region App Logic
-        private DelegateCommand _doSomLog;
+        private Template10.Mvvm.DelegateCommand _doSomLog;
 
-        public DelegateCommand DoSOMLogin => _doSomLog ?? (
+        public Template10.Mvvm.DelegateCommand DoSOMLogin => _doSomLog ?? (
 
-            _doSomLog = new DelegateCommand(async () =>
+            _doSomLog = new Template10.Mvvm.DelegateCommand(async () =>
 
             {
                 await Task.Delay(50);
                 try
                 {
-                    var login = await SOMTodayUWP.Login.Authorize("960222bf-836b-4f43-aa0c-67243cab2d50", "119371@mymerewade.nl", "christos,2002");
-                    var loginSuccess = login.loggedin;
-                    if (!loginSuccess)
+                    var login = await  AppClientUtil.DoUWLogin(SelectedComboboxItem.uuid, Username, Password);   
+                    if (!login)
                     {
                         // Login failed, show a message
                         await new MessageDialog(Resources.CodeResources.GetString("LoginFailedText")).ShowAsync();
                     }
                     else
                     {
-                        await NavigationService.NavigateAsync(typeof(MainPage));
+                        var vm = new LoginViewModel { NavigationService = this.NavigationService, Dispatcher = this.Dispatcher };
+                        var res = await vm.NavigationService.NavigateAsync(typeof(MainPage), "test");
+                        Debug.WriteLine(res.ToString());
                     }
                 }
                 catch (LoginFailedException e)
@@ -314,13 +323,11 @@ namespace TestEnv1.ViewModel
                     await new MessageDialog(errorMessage).ShowAsync();
                 }
                 catch (Exception e)
-
                 {
 
                     await ExceptionHandler.HandleException(e);
-
+                    Debug.WriteLine(e.Message); 
                     // HockeyClient.Current.TrackEvent(e.Message);
-
                 }
 
                 finally

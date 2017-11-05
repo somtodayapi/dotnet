@@ -34,19 +34,5 @@ namespace SOMTodayUWP.Models
         public int expires_in { get; set; }
 
         public bool loggedin { get; set; }
-
-        private bool acc_IsExpired()
-        {
-            bool f = false;
-            return f;
-        }
-        public async Task DoLogin()
-        {
-            if (access_token == null || acc_IsExpired())
-            {
-                access_token = access_token;
-
-            }
-        }
     }
 }

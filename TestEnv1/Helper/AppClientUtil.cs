@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Q42.WinRT.Data;
 using SOMTodayUWP.Models;
 using System;
 using System.Collections.Generic;
@@ -6,11 +7,17 @@ using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.Diagnostics;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
+using Template10.Common;
+using Template10.Services.NavigationService;
 using Template10.Utils;
 using TestEnv1.Exceptions;
+using TestEnv1.ViewModel;
 using Windows.Security.Credentials;
+using Windows.Storage;
 using Windows.UI.Popups;
 
 namespace TestEnv1.Helper
@@ -28,7 +35,7 @@ namespace TestEnv1.Helper
         
         #region Client Vars
         private static ISettings _clientSettings;
-        private static oAuthJSON _client;
+        private static Login.SOMLOgin _client = new Login.SOMLOgin();
         #endregion
 
 
@@ -94,17 +101,57 @@ namespace TestEnv1.Helper
         }
 
         /// <summary>
+        /// Checks if the token is expired
+        /// </summary>
+        public static async Task<bool> IsExpired(string token, string apiUrl)
+        {
+            //Init httpClient
+            HttpClient httpClient = new HttpClient();
+            //Set headers
+            httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            string loginUrl = apiUrl + "/rest/v1/account/me";
+            //Execute function and read
+            HttpResponseMessage response = await httpClient.GetAsync(loginUrl);
+            string resp = await response.Content.ReadAsStringAsync();
+            if(resp == null || resp == string.Empty)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
         /// Loads current AccessToken
         /// </summary>
         /// <returns></returns>
-        public static String LoadAccessToken()
-
+        public async static Task<String> LoadAccessToken()
         {
-
             var tokenString = SettingsService.Instance.AccessTokenString;
+            if (GetApiUrl() != string.Empty)
+            {
+                bool isExp = await IsExpired(tokenString, SettingsService.Instance.ApiUrl);
+                if (!isExp || tokenString != null)
+                {
+                    return tokenString;
+                }
+                else
+                {
+                    return "";
+                }
+            }
+            else
+            {
+                return "";
+            }
+        }
 
-            return tokenString == null ? null : SettingsService.Instance.AccessTokenString;
-
+        private static string GetApiUrl()
+        {
+            return SettingsService.Instance.ApiUrl;
         }
 
         /// <summary>
@@ -113,23 +160,22 @@ namespace TestEnv1.Helper
         /// <returns></returns>
         public static async Task InitializeClient()
         {
+            DataCache.Init();
             var credentials = SettingsService.Instance.UserCredentials;
             if (credentials != null)
             {
-
-
+                var localsettings = ApplicationData.Current.LocalSettings;
                 credentials.RetrievePassword();
                 _clientSettings = new Settings
                 {
                     Username = credentials.UserName,
                     Password = credentials.Password,
+                    UUId = localsettings.Values["schoolid"].ToString()
                 };
             }
-
-         
             try
             {
-                await _client.DoLogin();
+                await _client.DoLogin(SettingsService.Instance.Uuid,SettingsService.Instance.UserCredentials.UserName, SettingsService.Instance.UserCredentials.Password);
             }
             catch (Exception e)
             {
@@ -137,11 +183,13 @@ namespace TestEnv1.Helper
                 {
                     Debug.WriteLine("AccessTokenExpired Exception caught");
                     _client.access_token = "0";
-                    await _client.DoLogin();
+                    await _client.DoLogin(SettingsService.Instance.Uuid, SettingsService.Instance.UserCredentials.UserName, SettingsService.Instance.UserCredentials.Password);
                 }
                 else
                 {
-                    await new MessageDialog(e.Message).ShowAsync();
+                    // from inside any window
+                    var nav = WindowWrapper.Current().NavigationServices.FirstOrDefault();
+                    nav.Navigate(typeof(Views.Inloggen));
                 }
             }
         }
@@ -160,14 +208,16 @@ namespace TestEnv1.Helper
                 UUId = uuid,
                 Password = password
             };
+         
             // Get token
-            await _client.DoLogin();
+            await _client.DoLogin(uuid, username, password);
             // Update current token even if it's null and clear the token for the other identity provide
             SaveAccessToken();
             // Update other data if login worked
             if (_client.access_token == null) return false;
             SettingsService.Instance.UserCredentials =
-                new PasswordCredential(nameof(SettingsService.Instance.UserCredentials), username, password);
+                new PasswordCredential(uuid, username, password);
+            SettingsService.Instance.Uuid = uuid;
             // Return true if login worked, meaning that we have a token
             return true;
         }

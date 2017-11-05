@@ -100,11 +100,15 @@
     <Compile Include="Helper\AppClientUtil.cs" />
     <Compile Include="Helper\ExceptionHandler.cs" />
     <Compile Include="Helper\ISettings.cs" />
+    <Compile Include="Helper\IStorageHelper.cs" />
+    <Compile Include="Helper\LocalCacheHelper.cs" />
     <Compile Include="Helper\Settings.cs" />
     <Compile Include="Helper\Resources.cs" />
     <Compile Include="Helper\SettingsService.cs" />
+    <Compile Include="Helper\StorageHelper.cs" />
     <Compile Include="Helper\UpdateStatus.cs" />
     <Compile Include="Helper\Uti\AsyncSynchronizationContext.cs" />
+    <Compile Include="Login\SOMLOgin.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -117,6 +121,9 @@
     <Compile Include="ViewModel\MainPageViewModel.cs" />
     <Compile Include="Views\Cijfer.xaml.cs">
       <DependentUpon>Cijfer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Inloggen.xaml.cs">
       <DependentUpon>Inloggen.xaml</DependentUpon>
@@ -159,6 +166,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Page>
     <Page Include="Views\Cijfer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

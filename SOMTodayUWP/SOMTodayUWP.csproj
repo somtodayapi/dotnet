@@ -110,6 +110,8 @@
     <Compile Include="Grades\GetAllGrades.cs" />
     <Compile Include="Grades\GetCurrentGrades.cs" />
     <Compile Include="Grades\GetLatestGrades.cs" />
+    <Compile Include="Helpers\IStorageHelper.cs" />
+    <Compile Include="Helpers\StorageHelper.cs" />
     <Compile Include="Helpers\StringComparer.cs" />
     <Compile Include="Helpers\ToetsSoort.cs" />
     <Compile Include="Login.cs" />

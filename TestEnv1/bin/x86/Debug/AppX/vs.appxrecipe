@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-02T22:38:11.354</Modified>
+      <Modified>2017-11-05T00:34:12.813</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\TestEnv1.exe">
       <PackagePath>entrypoint\TestEnv1.exe</PackagePath>
-      <Modified>2017-11-02T22:38:09.194</Modified>
+      <Modified>2017-11-05T00:33:26.303</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\.nuget\packages\microsoft.xaml.behaviors.uwp.managed\1.1.0\lib\uap10.0\Microsoft.Xaml.Interactions.dll">
       <PackagePath>Microsoft.Xaml.Interactions.dll</PackagePath>
@@ -717,7 +717,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\SOMTodayUWP\bin\Debug\SOMTodayUWP.dll">
       <PackagePath>SOMTodayUWP.dll</PackagePath>
-      <Modified>2017-11-02T22:24:47.428</Modified>
+      <Modified>2017-11-05T00:21:38.125</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\Assets\logo_som.png">
       <PackagePath>Assets\logo_som.png</PackagePath>
@@ -763,7 +763,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\TestEnv1.xr.xml">
       <PackagePath>TestEnv1.xr.xml</PackagePath>
-      <Modified>2017-11-02T22:37:31.638</Modified>
+      <Modified>2017-11-04T17:28:34.131</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -804,11 +804,11 @@
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-11-02T22:38:10.548</Modified>
+      <Modified>2017-11-05T00:34:12.075</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\Core\TestEnv1.exe">
       <PackagePath>TestEnv1.exe</PackagePath>
-      <Modified>2017-11-02T22:38:11.341</Modified>
+      <Modified>2017-11-05T00:34:12.806</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

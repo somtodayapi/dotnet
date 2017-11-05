@@ -314,3 +314,8 @@ C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\Microsoft.Xaml.Int
 C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\Microsoft.Xaml.Interactivity.pri.xml
 C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\Template10Library.pri.xml
 C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\bin\x86\Debug\Views\Home.xbf
+C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\Views\Home.g.i.cs
+C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\Views\Home.g.cs
+C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\Views\Home.xaml
+C:\Users\ckara\source\repos\SOM\dotnet\TestEnv1\obj\x86\Debug\Views\Home.xbf

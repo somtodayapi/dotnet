@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using Template10.Mvvm;
 using Template10.Services.SettingsService;
 using Windows.Security.Credentials;
+using Windows.Storage;
 
 namespace TestEnv1.Helper
 {
@@ -69,100 +70,64 @@ namespace TestEnv1.Helper
 
 
         public string Uuid
-
         {
-
             get { return Get(string.Empty); }
 
             set { Set(value); }
-
         }
 
 
+        public string ApiUrl
+        {
+            get { return Get(string.Empty); }
+
+            set { Set(value); }
+        }
 
         public string AccessTokenString
-
         {
-
             get
-
             {
-
                 var credentials = _passwordVault.RetrieveAll();
-
                 var token = credentials.FirstOrDefault(credential => credential.Resource.Equals(nameof(AccessTokenString)));
-
                 if (token == null) return string.Empty;
-
                 token.RetrievePassword();
-
                 return token.Password;
-
             }
-
             set
-
             {
-
                 var credentials = _passwordVault.RetrieveAll();
-
                 var currentToken =
-
                         credentials.FirstOrDefault(credential => credential.Resource.Equals(nameof(AccessTokenString)));
-
                 if (currentToken != null) _passwordVault.Remove(currentToken);
-
                 if (value == null) return;
-
                 _passwordVault.Add(new PasswordCredential
-
                 {
-
                     UserName = nameof(AccessTokenString),
-
                     Password = value,
-
                     Resource = nameof(AccessTokenString)
-
                 });
-
             }
-
         }
-
         public PasswordCredential UserCredentials
-
         {
-
             get
-
             {
-
                 var credentials = _passwordVault.RetrieveAll();
-
                 return credentials.FirstOrDefault(credential => credential.Resource.Equals(nameof(UserCredentials)));
-
             }
-
             set
-
             {
-
                 var credentials = _passwordVault.RetrieveAll();
-
                 var currentCredential =
-
                         credentials.FirstOrDefault(credential => credential.Resource.Equals(nameof(UserCredentials)));
-
                 if (currentCredential != null) _passwordVault.Remove(currentCredential);
-
                 if (value == null) return;
-
                 _passwordVault.Add(value);
-
             }
-
         }
+
+
 
 
 

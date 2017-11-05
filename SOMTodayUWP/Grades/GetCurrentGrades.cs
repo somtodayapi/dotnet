@@ -76,6 +76,5 @@ namespace SOMTodayUWP.Grades
             var links = JsonConvert.DeserializeObject<RootObject>(resp).persoon.links[0].id;
             return links.ToString();
         }
-
     }
 }

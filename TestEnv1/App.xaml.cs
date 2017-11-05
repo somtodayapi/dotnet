@@ -22,6 +22,7 @@ using static Template10.Common.BootStrapper;
 using TestEnv1.Helper;
 using System.Diagnostics;
 using TestEnv1.Helper.Uti;
+using Windows.Storage;
 
 namespace TestEnv1
 {
@@ -189,7 +190,7 @@ namespace TestEnv1
             {
                 AsyncSynchronizationContext.Register();
                 Helper.Uti.AsyncSynchronizationContext.Register();
-                var currentAccessToken = AppClientUtil.LoadAccessToken();
+                var currentAccessToken = await AppClientUtil.LoadAccessToken();
                 if (currentAccessToken == string.Empty)
                 {
                 var res =  await NavigationService.NavigateAsync(typeof(Views.Inloggen), "test");

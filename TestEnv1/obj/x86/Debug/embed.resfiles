@@ -2,5 +2,6 @@ App.xbf
 MainPage.xbf
 Styles\Custom.xbf
 Views\Cijfer.xbf
+Views\Home.xbf
 Views\Inloggen.xbf
 Views\Test.xbf

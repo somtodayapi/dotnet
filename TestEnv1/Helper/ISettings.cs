@@ -14,6 +14,7 @@ namespace TestEnv1.Helper
         string Password { get; set; }
 
         string Username { get; set; }
+        string UUId { get; set; }
 
     }
 

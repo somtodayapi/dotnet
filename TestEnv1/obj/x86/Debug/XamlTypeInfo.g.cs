@@ -204,7 +204,7 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[48];
+            _typeNameTable = new string[49];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -225,36 +225,37 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
             _typeNameTable[17] = "Windows.UI.Xaml.Controls.ContentControl";
             _typeNameTable[18] = "Windows.UI.Xaml.UIElement";
             _typeNameTable[19] = "TestEnv1.ViewModel.MainPageViewModel";
-            _typeNameTable[20] = "TestEnv1.MainPage";
-            _typeNameTable[21] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[22] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[23] = "Template10.Controls.PageHeader";
-            _typeNameTable[24] = "Windows.UI.Xaml.Controls.CommandBar";
-            _typeNameTable[25] = "Double";
-            _typeNameTable[26] = "Template10.Behaviors.EllipsisBehavior.Visibilities";
-            _typeNameTable[27] = "Windows.UI.Xaml.Visibility";
-            _typeNameTable[28] = "Windows.UI.Xaml.Controls.Symbol";
-            _typeNameTable[29] = "Windows.UI.Xaml.Controls.Frame";
-            _typeNameTable[30] = "Windows.UI.Color";
-            _typeNameTable[31] = "Byte";
-            _typeNameTable[32] = "TestEnv1.ViewModel.CijferViewModel";
-            _typeNameTable[33] = "System.Collections.ObjectModel.ObservableCollection`1<TestEnv1.Model.CijferGem>";
-            _typeNameTable[34] = "System.Collections.ObjectModel.Collection`1<TestEnv1.Model.CijferGem>";
-            _typeNameTable[35] = "TestEnv1.Model.CijferGem";
-            _typeNameTable[36] = "TestEnv1.Views.Cijfer";
-            _typeNameTable[37] = "TestEnv1.ViewModel.LoginViewModel";
-            _typeNameTable[38] = "Template10.Mvvm.ViewModelBase";
-            _typeNameTable[39] = "Template10.Mvvm.BindableBase";
-            _typeNameTable[40] = "System.Collections.ObjectModel.ObservableCollection`1<SOMTodayUWP.Models.Instellingen>";
-            _typeNameTable[41] = "System.Collections.ObjectModel.Collection`1<SOMTodayUWP.Models.Instellingen>";
-            _typeNameTable[42] = "SOMTodayUWP.Models.Instellingen";
-            _typeNameTable[43] = "Template10.Mvvm.DelegateCommand";
-            _typeNameTable[44] = "Template10.Common.IDispatcherWrapper";
-            _typeNameTable[45] = "Template10.Common.IStateItems";
-            _typeNameTable[46] = "TestEnv1.Views.Inloggen";
-            _typeNameTable[47] = "TestEnv1.Views.Test";
+            _typeNameTable[20] = "Template10.Mvvm.ViewModelBase";
+            _typeNameTable[21] = "Template10.Mvvm.BindableBase";
+            _typeNameTable[22] = "Template10.Common.IDispatcherWrapper";
+            _typeNameTable[23] = "Template10.Common.IStateItems";
+            _typeNameTable[24] = "TestEnv1.MainPage";
+            _typeNameTable[25] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[26] = "Windows.UI.Xaml.Controls.UserControl";
+            _typeNameTable[27] = "Template10.Controls.PageHeader";
+            _typeNameTable[28] = "Windows.UI.Xaml.Controls.CommandBar";
+            _typeNameTable[29] = "Double";
+            _typeNameTable[30] = "Template10.Behaviors.EllipsisBehavior.Visibilities";
+            _typeNameTable[31] = "Windows.UI.Xaml.Visibility";
+            _typeNameTable[32] = "Windows.UI.Xaml.Controls.Symbol";
+            _typeNameTable[33] = "Windows.UI.Xaml.Controls.Frame";
+            _typeNameTable[34] = "Windows.UI.Color";
+            _typeNameTable[35] = "Byte";
+            _typeNameTable[36] = "TestEnv1.ViewModel.CijferViewModel";
+            _typeNameTable[37] = "System.Collections.ObjectModel.ObservableCollection`1<TestEnv1.Model.CijferGem>";
+            _typeNameTable[38] = "System.Collections.ObjectModel.Collection`1<TestEnv1.Model.CijferGem>";
+            _typeNameTable[39] = "TestEnv1.Model.CijferGem";
+            _typeNameTable[40] = "TestEnv1.Views.Cijfer";
+            _typeNameTable[41] = "TestEnv1.Views.Home";
+            _typeNameTable[42] = "TestEnv1.ViewModel.LoginViewModel";
+            _typeNameTable[43] = "SOMTodayUWP.Models.Instellingen";
+            _typeNameTable[44] = "System.Collections.ObjectModel.ObservableCollection`1<SOMTodayUWP.Models.Instellingen>";
+            _typeNameTable[45] = "System.Collections.ObjectModel.Collection`1<SOMTodayUWP.Models.Instellingen>";
+            _typeNameTable[46] = "Template10.Mvvm.DelegateCommand";
+            _typeNameTable[47] = "TestEnv1.Views.Inloggen";
+            _typeNameTable[48] = "TestEnv1.Views.Test";
 
-            _typeTable = new global::System.Type[48];
+            _typeTable = new global::System.Type[49];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -275,34 +276,35 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
             _typeTable[17] = typeof(global::Windows.UI.Xaml.Controls.ContentControl);
             _typeTable[18] = typeof(global::Windows.UI.Xaml.UIElement);
             _typeTable[19] = typeof(global::TestEnv1.ViewModel.MainPageViewModel);
-            _typeTable[20] = typeof(global::TestEnv1.MainPage);
-            _typeTable[21] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[22] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[23] = typeof(global::Template10.Controls.PageHeader);
-            _typeTable[24] = typeof(global::Windows.UI.Xaml.Controls.CommandBar);
-            _typeTable[25] = typeof(global::System.Double);
-            _typeTable[26] = typeof(global::Template10.Behaviors.EllipsisBehavior.Visibilities);
-            _typeTable[27] = typeof(global::Windows.UI.Xaml.Visibility);
-            _typeTable[28] = typeof(global::Windows.UI.Xaml.Controls.Symbol);
-            _typeTable[29] = typeof(global::Windows.UI.Xaml.Controls.Frame);
-            _typeTable[30] = typeof(global::Windows.UI.Color);
-            _typeTable[31] = typeof(global::System.Byte);
-            _typeTable[32] = typeof(global::TestEnv1.ViewModel.CijferViewModel);
-            _typeTable[33] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::TestEnv1.Model.CijferGem>);
-            _typeTable[34] = typeof(global::System.Collections.ObjectModel.Collection<global::TestEnv1.Model.CijferGem>);
-            _typeTable[35] = typeof(global::TestEnv1.Model.CijferGem);
-            _typeTable[36] = typeof(global::TestEnv1.Views.Cijfer);
-            _typeTable[37] = typeof(global::TestEnv1.ViewModel.LoginViewModel);
-            _typeTable[38] = typeof(global::Template10.Mvvm.ViewModelBase);
-            _typeTable[39] = typeof(global::Template10.Mvvm.BindableBase);
-            _typeTable[40] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::SOMTodayUWP.Models.Instellingen>);
-            _typeTable[41] = typeof(global::System.Collections.ObjectModel.Collection<global::SOMTodayUWP.Models.Instellingen>);
-            _typeTable[42] = typeof(global::SOMTodayUWP.Models.Instellingen);
-            _typeTable[43] = typeof(global::Template10.Mvvm.DelegateCommand);
-            _typeTable[44] = typeof(global::Template10.Common.IDispatcherWrapper);
-            _typeTable[45] = typeof(global::Template10.Common.IStateItems);
-            _typeTable[46] = typeof(global::TestEnv1.Views.Inloggen);
-            _typeTable[47] = typeof(global::TestEnv1.Views.Test);
+            _typeTable[20] = typeof(global::Template10.Mvvm.ViewModelBase);
+            _typeTable[21] = typeof(global::Template10.Mvvm.BindableBase);
+            _typeTable[22] = typeof(global::Template10.Common.IDispatcherWrapper);
+            _typeTable[23] = typeof(global::Template10.Common.IStateItems);
+            _typeTable[24] = typeof(global::TestEnv1.MainPage);
+            _typeTable[25] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[26] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
+            _typeTable[27] = typeof(global::Template10.Controls.PageHeader);
+            _typeTable[28] = typeof(global::Windows.UI.Xaml.Controls.CommandBar);
+            _typeTable[29] = typeof(global::System.Double);
+            _typeTable[30] = typeof(global::Template10.Behaviors.EllipsisBehavior.Visibilities);
+            _typeTable[31] = typeof(global::Windows.UI.Xaml.Visibility);
+            _typeTable[32] = typeof(global::Windows.UI.Xaml.Controls.Symbol);
+            _typeTable[33] = typeof(global::Windows.UI.Xaml.Controls.Frame);
+            _typeTable[34] = typeof(global::Windows.UI.Color);
+            _typeTable[35] = typeof(global::System.Byte);
+            _typeTable[36] = typeof(global::TestEnv1.ViewModel.CijferViewModel);
+            _typeTable[37] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::TestEnv1.Model.CijferGem>);
+            _typeTable[38] = typeof(global::System.Collections.ObjectModel.Collection<global::TestEnv1.Model.CijferGem>);
+            _typeTable[39] = typeof(global::TestEnv1.Model.CijferGem);
+            _typeTable[40] = typeof(global::TestEnv1.Views.Cijfer);
+            _typeTable[41] = typeof(global::TestEnv1.Views.Home);
+            _typeTable[42] = typeof(global::TestEnv1.ViewModel.LoginViewModel);
+            _typeTable[43] = typeof(global::SOMTodayUWP.Models.Instellingen);
+            _typeTable[44] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::SOMTodayUWP.Models.Instellingen>);
+            _typeTable[45] = typeof(global::System.Collections.ObjectModel.Collection<global::SOMTodayUWP.Models.Instellingen>);
+            _typeTable[46] = typeof(global::Template10.Mvvm.DelegateCommand);
+            _typeTable[47] = typeof(global::TestEnv1.Views.Inloggen);
+            _typeTable[48] = typeof(global::TestEnv1.Views.Test);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -341,19 +343,20 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
         private object Activate_3_Dictionary() { return new global::System.Collections.Generic.Dictionary<global::System.String, global::System.Object>(); }
         private object Activate_16_ModalDialog() { return new global::Template10.Controls.ModalDialog(); }
         private object Activate_19_MainPageViewModel() { return new global::TestEnv1.ViewModel.MainPageViewModel(); }
-        private object Activate_20_MainPage() { return new global::TestEnv1.MainPage(); }
-        private object Activate_23_PageHeader() { return new global::Template10.Controls.PageHeader(); }
-        private object Activate_32_CijferViewModel() { return new global::TestEnv1.ViewModel.CijferViewModel(); }
-        private object Activate_33_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TestEnv1.Model.CijferGem>(); }
-        private object Activate_34_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TestEnv1.Model.CijferGem>(); }
-        private object Activate_35_CijferGem() { return new global::TestEnv1.Model.CijferGem(); }
-        private object Activate_36_Cijfer() { return new global::TestEnv1.Views.Cijfer(); }
-        private object Activate_37_LoginViewModel() { return new global::TestEnv1.ViewModel.LoginViewModel(); }
-        private object Activate_40_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::SOMTodayUWP.Models.Instellingen>(); }
-        private object Activate_41_Collection() { return new global::System.Collections.ObjectModel.Collection<global::SOMTodayUWP.Models.Instellingen>(); }
-        private object Activate_42_Instellingen() { return new global::SOMTodayUWP.Models.Instellingen(); }
-        private object Activate_46_Inloggen() { return new global::TestEnv1.Views.Inloggen(); }
-        private object Activate_47_Test() { return new global::TestEnv1.Views.Test(); }
+        private object Activate_24_MainPage() { return new global::TestEnv1.MainPage(); }
+        private object Activate_27_PageHeader() { return new global::Template10.Controls.PageHeader(); }
+        private object Activate_36_CijferViewModel() { return new global::TestEnv1.ViewModel.CijferViewModel(); }
+        private object Activate_37_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::TestEnv1.Model.CijferGem>(); }
+        private object Activate_38_Collection() { return new global::System.Collections.ObjectModel.Collection<global::TestEnv1.Model.CijferGem>(); }
+        private object Activate_39_CijferGem() { return new global::TestEnv1.Model.CijferGem(); }
+        private object Activate_40_Cijfer() { return new global::TestEnv1.Views.Cijfer(); }
+        private object Activate_41_Home() { return new global::TestEnv1.Views.Home(); }
+        private object Activate_42_LoginViewModel() { return new global::TestEnv1.ViewModel.LoginViewModel(); }
+        private object Activate_43_Instellingen() { return new global::SOMTodayUWP.Models.Instellingen(); }
+        private object Activate_44_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::SOMTodayUWP.Models.Instellingen>(); }
+        private object Activate_45_Collection() { return new global::System.Collections.ObjectModel.Collection<global::SOMTodayUWP.Models.Instellingen>(); }
+        private object Activate_47_Inloggen() { return new global::TestEnv1.Views.Inloggen(); }
+        private object Activate_48_Test() { return new global::TestEnv1.Views.Test(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -368,25 +371,25 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_33_ObservableCollection(object instance, object item)
+        private void VectorAdd_37_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TestEnv1.Model.CijferGem>)instance;
             var newItem = (global::TestEnv1.Model.CijferGem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_34_Collection(object instance, object item)
+        private void VectorAdd_38_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::TestEnv1.Model.CijferGem>)instance;
             var newItem = (global::TestEnv1.Model.CijferGem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_40_ObservableCollection(object instance, object item)
+        private void VectorAdd_44_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::SOMTodayUWP.Models.Instellingen>)instance;
             var newItem = (global::SOMTodayUWP.Models.Instellingen)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_41_Collection(object instance, object item)
+        private void VectorAdd_45_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::SOMTodayUWP.Models.Instellingen>)instance;
             var newItem = (global::SOMTodayUWP.Models.Instellingen)item;
@@ -526,8 +529,10 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 break;
 
             case 19:   //  TestEnv1.ViewModel.MainPageViewModel
-                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
                 userType.Activator = Activate_19_MainPageViewModel;
+                userType.AddMemberName("Username");
+                userType.AddMemberName("Password");
                 userType.AddMemberName("Title");
                 userType.AddMemberName("Home");
                 userType.AddMemberName("Grade");
@@ -538,24 +543,49 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 20:   //  TestEnv1.MainPage
+            case 20:   //  Template10.Mvvm.ViewModelBase
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.BindableBase"));
+                userType.AddMemberName("NavigationService");
+                userType.AddMemberName("Dispatcher");
+                userType.AddMemberName("SessionState");
+                xamlType = userType;
+                break;
+
+            case 21:   //  Template10.Mvvm.BindableBase
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                xamlType = userType;
+                break;
+
+            case 22:   //  Template10.Common.IDispatcherWrapper
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 23:   //  Template10.Common.IStateItems
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 24:   //  TestEnv1.MainPage
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_20_MainPage;
+                userType.Activator = Activate_24_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 21:   //  Windows.UI.Xaml.Controls.Page
+            case 25:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 22:   //  Windows.UI.Xaml.Controls.UserControl
+            case 26:   //  Windows.UI.Xaml.Controls.UserControl
                 xamlType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 23:   //  Template10.Controls.PageHeader
+            case 27:   //  Template10.Controls.PageHeader
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.CommandBar"));
-                userType.Activator = Activate_23_PageHeader;
+                userType.Activator = Activate_27_PageHeader;
                 userType.AddMemberName("VisualStateNarrowMinWidth");
                 userType.AddMemberName("VisualStateNormalMinWidth");
                 userType.AddMemberName("EllipsisVisibility");
@@ -568,15 +598,15 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 24:   //  Windows.UI.Xaml.Controls.CommandBar
+            case 28:   //  Windows.UI.Xaml.Controls.CommandBar
                 xamlType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 25:   //  Double
+            case 29:   //  Double
                 xamlType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 26:   //  Template10.Behaviors.EllipsisBehavior.Visibilities
+            case 30:   //  Template10.Behaviors.EllipsisBehavior.Visibilities
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Visible", global::Template10.Behaviors.EllipsisBehavior.Visibilities.Visible);
                 userType.AddEnumValue("Collapsed", global::Template10.Behaviors.EllipsisBehavior.Visibilities.Collapsed);
@@ -584,19 +614,19 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 27:   //  Windows.UI.Xaml.Visibility
+            case 31:   //  Windows.UI.Xaml.Visibility
                 xamlType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 28:   //  Windows.UI.Xaml.Controls.Symbol
+            case 32:   //  Windows.UI.Xaml.Controls.Symbol
                 xamlType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 29:   //  Windows.UI.Xaml.Controls.Frame
+            case 33:   //  Windows.UI.Xaml.Controls.Frame
                 xamlType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 30:   //  Windows.UI.Color
+            case 34:   //  Windows.UI.Color
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.AddMemberName("A");
                 userType.AddMemberName("B");
@@ -605,37 +635,37 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 31:   //  Byte
+            case 35:   //  Byte
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 32:   //  TestEnv1.ViewModel.CijferViewModel
+            case 36:   //  TestEnv1.ViewModel.CijferViewModel
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_32_CijferViewModel;
+                userType.Activator = Activate_36_CijferViewModel;
                 userType.AddMemberName("Cijfers");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 33:   //  System.Collections.ObjectModel.ObservableCollection`1<TestEnv1.Model.CijferGem>
+            case 37:   //  System.Collections.ObjectModel.ObservableCollection`1<TestEnv1.Model.CijferGem>
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<TestEnv1.Model.CijferGem>"));
-                userType.CollectionAdd = VectorAdd_33_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_37_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 34:   //  System.Collections.ObjectModel.Collection`1<TestEnv1.Model.CijferGem>
+            case 38:   //  System.Collections.ObjectModel.Collection`1<TestEnv1.Model.CijferGem>
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_34_Collection;
-                userType.CollectionAdd = VectorAdd_34_Collection;
+                userType.Activator = Activate_38_Collection;
+                userType.CollectionAdd = VectorAdd_38_Collection;
                 xamlType = userType;
                 break;
 
-            case 35:   //  TestEnv1.Model.CijferGem
+            case 39:   //  TestEnv1.Model.CijferGem
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_35_CijferGem;
+                userType.Activator = Activate_39_CijferGem;
                 userType.AddMemberName("Vaknaam");
                 userType.AddMemberName("Laatste_Cijfer");
                 userType.AddMemberName("Gem");
@@ -644,16 +674,24 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 36:   //  TestEnv1.Views.Cijfer
+            case 40:   //  TestEnv1.Views.Cijfer
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_36_Cijfer;
+                userType.Activator = Activate_40_Cijfer;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 37:   //  TestEnv1.ViewModel.LoginViewModel
+            case 41:   //  TestEnv1.Views.Home
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_41_Home;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 42:   //  TestEnv1.ViewModel.LoginViewModel
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_37_LoginViewModel;
+                userType.Activator = Activate_42_LoginViewModel;
+                userType.AddMemberName("SelectedComboboxItem");
                 userType.AddMemberName("Schools");
                 userType.AddMemberName("Username");
                 userType.AddMemberName("UUID");
@@ -675,70 +713,45 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 38:   //  Template10.Mvvm.ViewModelBase
-                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.BindableBase"));
-                userType.AddMemberName("NavigationService");
-                userType.AddMemberName("Dispatcher");
-                userType.AddMemberName("SessionState");
-                xamlType = userType;
-                break;
-
-            case 39:   //  Template10.Mvvm.BindableBase
+            case 43:   //  SOMTodayUWP.Models.Instellingen
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                xamlType = userType;
-                break;
-
-            case 40:   //  System.Collections.ObjectModel.ObservableCollection`1<SOMTodayUWP.Models.Instellingen>
-                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<SOMTodayUWP.Models.Instellingen>"));
-                userType.CollectionAdd = VectorAdd_40_ObservableCollection;
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 41:   //  System.Collections.ObjectModel.Collection`1<SOMTodayUWP.Models.Instellingen>
-                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_41_Collection;
-                userType.CollectionAdd = VectorAdd_41_Collection;
-                xamlType = userType;
-                break;
-
-            case 42:   //  SOMTodayUWP.Models.Instellingen
-                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_42_Instellingen;
+                userType.Activator = Activate_43_Instellingen;
                 userType.AddMemberName("naam");
                 userType.AddMemberName("plaats");
                 userType.AddMemberName("uuid");
                 xamlType = userType;
                 break;
 
-            case 43:   //  Template10.Mvvm.DelegateCommand
+            case 44:   //  System.Collections.ObjectModel.ObservableCollection`1<SOMTodayUWP.Models.Instellingen>
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<SOMTodayUWP.Models.Instellingen>"));
+                userType.CollectionAdd = VectorAdd_44_ObservableCollection;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 45:   //  System.Collections.ObjectModel.Collection`1<SOMTodayUWP.Models.Instellingen>
+                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_45_Collection;
+                userType.CollectionAdd = VectorAdd_45_Collection;
+                xamlType = userType;
+                break;
+
+            case 46:   //  Template10.Mvvm.DelegateCommand
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 44:   //  Template10.Common.IDispatcherWrapper
-                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 45:   //  Template10.Common.IStateItems
-                userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 46:   //  TestEnv1.Views.Inloggen
+            case 47:   //  TestEnv1.Views.Inloggen
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_46_Inloggen;
+                userType.Activator = Activate_47_Inloggen;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 47:   //  TestEnv1.Views.Test
+            case 48:   //  TestEnv1.Views.Test
                 userType = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_47_Test;
+                userType.Activator = Activate_48_Test;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -923,470 +936,500 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
             var that = (global::Template10.Common.BootStrapper)instance;
             that.ModalContent = (global::Windows.UI.Xaml.UIElement)Value;
         }
-        private object get_14_MainPageViewModel_Title(object instance)
+        private object get_14_MainPageViewModel_Username(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
+            return that.Username;
+        }
+        private void set_14_MainPageViewModel_Username(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
+            that.Username = (global::System.String)Value;
+        }
+        private object get_15_MainPageViewModel_Password(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
+            return that.Password;
+        }
+        private void set_15_MainPageViewModel_Password(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
+            that.Password = (global::System.String)Value;
+        }
+        private object get_16_MainPageViewModel_Title(object instance)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             return that.Title;
         }
-        private void set_14_MainPageViewModel_Title(object instance, object Value)
+        private void set_16_MainPageViewModel_Title(object instance, object Value)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_15_MainPageViewModel_Home(object instance)
+        private object get_17_MainPageViewModel_Home(object instance)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             return that.Home;
         }
-        private void set_15_MainPageViewModel_Home(object instance, object Value)
+        private void set_17_MainPageViewModel_Home(object instance, object Value)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             that.Home = (global::System.String)Value;
         }
-        private object get_16_MainPageViewModel_Grade(object instance)
+        private object get_18_MainPageViewModel_Grade(object instance)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             return that.Grade;
         }
-        private void set_16_MainPageViewModel_Grade(object instance, object Value)
+        private void set_18_MainPageViewModel_Grade(object instance, object Value)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             that.Grade = (global::System.String)Value;
         }
-        private object get_17_MainPageViewModel_Huiswerk(object instance)
+        private object get_19_MainPageViewModel_Huiswerk(object instance)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             return that.Huiswerk;
         }
-        private void set_17_MainPageViewModel_Huiswerk(object instance, object Value)
+        private void set_19_MainPageViewModel_Huiswerk(object instance, object Value)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             that.Huiswerk = (global::System.String)Value;
         }
-        private object get_18_MainPageViewModel_Rooster(object instance)
+        private object get_20_MainPageViewModel_Rooster(object instance)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             return that.Rooster;
         }
-        private void set_18_MainPageViewModel_Rooster(object instance, object Value)
+        private void set_20_MainPageViewModel_Rooster(object instance, object Value)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             that.Rooster = (global::System.String)Value;
         }
-        private object get_19_MainPageViewModel_Vakken(object instance)
+        private object get_21_MainPageViewModel_Vakken(object instance)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             return that.Vakken;
         }
-        private void set_19_MainPageViewModel_Vakken(object instance, object Value)
+        private void set_21_MainPageViewModel_Vakken(object instance, object Value)
         {
             var that = (global::TestEnv1.ViewModel.MainPageViewModel)instance;
             that.Vakken = (global::System.String)Value;
         }
-        private object get_20_PageHeader_VisualStateNarrowMinWidth(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.VisualStateNarrowMinWidth;
-        }
-        private void set_20_PageHeader_VisualStateNarrowMinWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.VisualStateNarrowMinWidth = (global::System.Double)Value;
-        }
-        private object get_21_PageHeader_VisualStateNormalMinWidth(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.VisualStateNormalMinWidth;
-        }
-        private void set_21_PageHeader_VisualStateNormalMinWidth(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.VisualStateNormalMinWidth = (global::System.Double)Value;
-        }
-        private object get_22_PageHeader_EllipsisVisibility(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.EllipsisVisibility;
-        }
-        private void set_22_PageHeader_EllipsisVisibility(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.EllipsisVisibility = (global::Template10.Behaviors.EllipsisBehavior.Visibilities)Value;
-        }
-        private object get_23_PageHeader_PrimaryCommandsVisibility(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.PrimaryCommandsVisibility;
-        }
-        private void set_23_PageHeader_PrimaryCommandsVisibility(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.PrimaryCommandsVisibility = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_24_PageHeader_BackButtonVisibility(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.BackButtonVisibility;
-        }
-        private void set_24_PageHeader_BackButtonVisibility(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.BackButtonVisibility = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_25_PageHeader_BackButtonContent(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.BackButtonContent;
-        }
-        private void set_25_PageHeader_BackButtonContent(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.BackButtonContent = (global::Windows.UI.Xaml.Controls.Symbol)Value;
-        }
-        private object get_26_PageHeader_Frame(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.Frame;
-        }
-        private void set_26_PageHeader_Frame(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.Frame = (global::Windows.UI.Xaml.Controls.Frame)Value;
-        }
-        private object get_27_PageHeader_EnableHamburgerMenuAutoLayout(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.EnableHamburgerMenuAutoLayout;
-        }
-        private void set_27_PageHeader_EnableHamburgerMenuAutoLayout(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.EnableHamburgerMenuAutoLayout = (global::System.Boolean)Value;
-        }
-        private object get_28_PageHeader_Text(object instance)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            return that.Text;
-        }
-        private void set_28_PageHeader_Text(object instance, object Value)
-        {
-            var that = (global::Template10.Controls.PageHeader)instance;
-            that.Text = (global::System.String)Value;
-        }
-        private object get_29_Color_A(object instance)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            return that.A;
-        }
-        private void set_29_Color_A(object instance, object Value)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            that.A = (global::System.Byte)Value;
-        }
-        private object get_30_Color_B(object instance)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            return that.B;
-        }
-        private void set_30_Color_B(object instance, object Value)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            that.B = (global::System.Byte)Value;
-        }
-        private object get_31_Color_G(object instance)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            return that.G;
-        }
-        private void set_31_Color_G(object instance, object Value)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            that.G = (global::System.Byte)Value;
-        }
-        private object get_32_Color_R(object instance)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            return that.R;
-        }
-        private void set_32_Color_R(object instance, object Value)
-        {
-            var that = (global::Windows.UI.Color)instance;
-            that.R = (global::System.Byte)Value;
-        }
-        private object get_33_CijferViewModel_Cijfers(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.CijferViewModel)instance;
-            return that.Cijfers;
-        }
-        private void set_33_CijferViewModel_Cijfers(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.CijferViewModel)instance;
-            that.Cijfers = (global::System.Collections.ObjectModel.ObservableCollection<global::TestEnv1.Model.CijferGem>)Value;
-        }
-        private object get_34_CijferGem_Vaknaam(object instance)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            return that.Vaknaam;
-        }
-        private void set_34_CijferGem_Vaknaam(object instance, object Value)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            that.Vaknaam = (global::System.String)Value;
-        }
-        private object get_35_CijferGem_Laatste_Cijfer(object instance)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            return that.Laatste_Cijfer;
-        }
-        private void set_35_CijferGem_Laatste_Cijfer(object instance, object Value)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            that.Laatste_Cijfer = (global::System.String)Value;
-        }
-        private object get_36_CijferGem_Gem(object instance)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            return that.Gem;
-        }
-        private void set_36_CijferGem_Gem(object instance, object Value)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            that.Gem = (global::System.String)Value;
-        }
-        private object get_37_CijferGem_Achtergrondkleur(object instance)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            return that.Achtergrondkleur;
-        }
-        private void set_37_CijferGem_Achtergrondkleur(object instance, object Value)
-        {
-            var that = (global::TestEnv1.Model.CijferGem)instance;
-            that.Achtergrondkleur = (global::System.String)Value;
-        }
-        private object get_38_LoginViewModel_Schools(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Schools;
-        }
-        private void set_38_LoginViewModel_Schools(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Schools = (global::System.Collections.ObjectModel.ObservableCollection<global::SOMTodayUWP.Models.Instellingen>)Value;
-        }
-        private object get_39_Instellingen_naam(object instance)
-        {
-            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
-            return that.naam;
-        }
-        private void set_39_Instellingen_naam(object instance, object Value)
-        {
-            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
-            that.naam = (global::System.String)Value;
-        }
-        private object get_40_Instellingen_plaats(object instance)
-        {
-            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
-            return that.plaats;
-        }
-        private void set_40_Instellingen_plaats(object instance, object Value)
-        {
-            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
-            that.plaats = (global::System.String)Value;
-        }
-        private object get_41_Instellingen_uuid(object instance)
-        {
-            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
-            return that.uuid;
-        }
-        private void set_41_Instellingen_uuid(object instance, object Value)
-        {
-            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
-            that.uuid = (global::System.String)Value;
-        }
-        private object get_42_LoginViewModel_Username(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Username;
-        }
-        private void set_42_LoginViewModel_Username(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Username = (global::System.String)Value;
-        }
-        private object get_43_LoginViewModel_UUID(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.UUID;
-        }
-        private void set_43_LoginViewModel_UUID(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.UUID = (global::System.String)Value;
-        }
-        private object get_44_LoginViewModel_Password(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Password;
-        }
-        private void set_44_LoginViewModel_Password(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Password = (global::System.String)Value;
-        }
-        private object get_45_LoginViewModel_RememberLoginData(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.RememberLoginData;
-        }
-        private void set_45_LoginViewModel_RememberLoginData(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.RememberLoginData = (global::System.Boolean)Value;
-        }
-        private object get_46_LoginViewModel_Title(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Title;
-        }
-        private void set_46_LoginViewModel_Title(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Title = (global::System.String)Value;
-        }
-        private object get_47_LoginViewModel_Sub(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Sub;
-        }
-        private void set_47_LoginViewModel_Sub(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Sub = (global::System.String)Value;
-        }
-        private object get_48_LoginViewModel_Paragraph(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Paragraph;
-        }
-        private void set_48_LoginViewModel_Paragraph(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Paragraph = (global::System.String)Value;
-        }
-        private object get_49_LoginViewModel_Button_read(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Button_read;
-        }
-        private void set_49_LoginViewModel_Button_read(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Button_read = (global::System.String)Value;
-        }
-        private object get_50_LoginViewModel_OrLogin(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.OrLogin;
-        }
-        private void set_50_LoginViewModel_OrLogin(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.OrLogin = (global::System.String)Value;
-        }
-        private object get_51_LoginViewModel_ChooseSchool(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.ChooseSchool;
-        }
-        private void set_51_LoginViewModel_ChooseSchool(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.ChooseSchool = (global::System.String)Value;
-        }
-        private object get_52_LoginViewModel_UsernameBox(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.UsernameBox;
-        }
-        private void set_52_LoginViewModel_UsernameBox(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.UsernameBox = (global::System.String)Value;
-        }
-        private object get_53_LoginViewModel_PasswordBox(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.PasswordBox;
-        }
-        private void set_53_LoginViewModel_PasswordBox(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.PasswordBox = (global::System.String)Value;
-        }
-        private object get_54_LoginViewModel_RememberMe(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.RememberMe;
-        }
-        private void set_54_LoginViewModel_RememberMe(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.RememberMe = (global::System.String)Value;
-        }
-        private object get_55_LoginViewModel_Login_button(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.Login_button;
-        }
-        private void set_55_LoginViewModel_Login_button(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.Login_button = (global::System.String)Value;
-        }
-        private object get_56_LoginViewModel_ChooseLang(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.ChooseLang;
-        }
-        private void set_56_LoginViewModel_ChooseLang(object instance, object Value)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            that.ChooseLang = (global::System.String)Value;
-        }
-        private object get_57_LoginViewModel_DoSOMLogin(object instance)
-        {
-            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
-            return that.DoSOMLogin;
-        }
-        private object get_58_ViewModelBase_NavigationService(object instance)
+        private object get_22_ViewModelBase_NavigationService(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.NavigationService;
         }
-        private void set_58_ViewModelBase_NavigationService(object instance, object Value)
+        private void set_22_ViewModelBase_NavigationService(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.NavigationService = (global::Template10.Services.NavigationService.INavigationService)Value;
         }
-        private object get_59_ViewModelBase_Dispatcher(object instance)
+        private object get_23_ViewModelBase_Dispatcher(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.Dispatcher;
         }
-        private void set_59_ViewModelBase_Dispatcher(object instance, object Value)
+        private void set_23_ViewModelBase_Dispatcher(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.Dispatcher = (global::Template10.Common.IDispatcherWrapper)Value;
         }
-        private object get_60_ViewModelBase_SessionState(object instance)
+        private object get_24_ViewModelBase_SessionState(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.SessionState;
         }
-        private void set_60_ViewModelBase_SessionState(object instance, object Value)
+        private void set_24_ViewModelBase_SessionState(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.SessionState = (global::Template10.Common.IStateItems)Value;
+        }
+        private object get_25_PageHeader_VisualStateNarrowMinWidth(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.VisualStateNarrowMinWidth;
+        }
+        private void set_25_PageHeader_VisualStateNarrowMinWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.VisualStateNarrowMinWidth = (global::System.Double)Value;
+        }
+        private object get_26_PageHeader_VisualStateNormalMinWidth(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.VisualStateNormalMinWidth;
+        }
+        private void set_26_PageHeader_VisualStateNormalMinWidth(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.VisualStateNormalMinWidth = (global::System.Double)Value;
+        }
+        private object get_27_PageHeader_EllipsisVisibility(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.EllipsisVisibility;
+        }
+        private void set_27_PageHeader_EllipsisVisibility(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.EllipsisVisibility = (global::Template10.Behaviors.EllipsisBehavior.Visibilities)Value;
+        }
+        private object get_28_PageHeader_PrimaryCommandsVisibility(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.PrimaryCommandsVisibility;
+        }
+        private void set_28_PageHeader_PrimaryCommandsVisibility(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.PrimaryCommandsVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_29_PageHeader_BackButtonVisibility(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.BackButtonVisibility;
+        }
+        private void set_29_PageHeader_BackButtonVisibility(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.BackButtonVisibility = (global::Windows.UI.Xaml.Visibility)Value;
+        }
+        private object get_30_PageHeader_BackButtonContent(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.BackButtonContent;
+        }
+        private void set_30_PageHeader_BackButtonContent(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.BackButtonContent = (global::Windows.UI.Xaml.Controls.Symbol)Value;
+        }
+        private object get_31_PageHeader_Frame(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.Frame;
+        }
+        private void set_31_PageHeader_Frame(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.Frame = (global::Windows.UI.Xaml.Controls.Frame)Value;
+        }
+        private object get_32_PageHeader_EnableHamburgerMenuAutoLayout(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.EnableHamburgerMenuAutoLayout;
+        }
+        private void set_32_PageHeader_EnableHamburgerMenuAutoLayout(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.EnableHamburgerMenuAutoLayout = (global::System.Boolean)Value;
+        }
+        private object get_33_PageHeader_Text(object instance)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            return that.Text;
+        }
+        private void set_33_PageHeader_Text(object instance, object Value)
+        {
+            var that = (global::Template10.Controls.PageHeader)instance;
+            that.Text = (global::System.String)Value;
+        }
+        private object get_34_Color_A(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.A;
+        }
+        private void set_34_Color_A(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.A = (global::System.Byte)Value;
+        }
+        private object get_35_Color_B(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.B;
+        }
+        private void set_35_Color_B(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.B = (global::System.Byte)Value;
+        }
+        private object get_36_Color_G(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.G;
+        }
+        private void set_36_Color_G(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.G = (global::System.Byte)Value;
+        }
+        private object get_37_Color_R(object instance)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            return that.R;
+        }
+        private void set_37_Color_R(object instance, object Value)
+        {
+            var that = (global::Windows.UI.Color)instance;
+            that.R = (global::System.Byte)Value;
+        }
+        private object get_38_CijferViewModel_Cijfers(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.CijferViewModel)instance;
+            return that.Cijfers;
+        }
+        private void set_38_CijferViewModel_Cijfers(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.CijferViewModel)instance;
+            that.Cijfers = (global::System.Collections.ObjectModel.ObservableCollection<global::TestEnv1.Model.CijferGem>)Value;
+        }
+        private object get_39_CijferGem_Vaknaam(object instance)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            return that.Vaknaam;
+        }
+        private void set_39_CijferGem_Vaknaam(object instance, object Value)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            that.Vaknaam = (global::System.String)Value;
+        }
+        private object get_40_CijferGem_Laatste_Cijfer(object instance)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            return that.Laatste_Cijfer;
+        }
+        private void set_40_CijferGem_Laatste_Cijfer(object instance, object Value)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            that.Laatste_Cijfer = (global::System.String)Value;
+        }
+        private object get_41_CijferGem_Gem(object instance)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            return that.Gem;
+        }
+        private void set_41_CijferGem_Gem(object instance, object Value)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            that.Gem = (global::System.String)Value;
+        }
+        private object get_42_CijferGem_Achtergrondkleur(object instance)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            return that.Achtergrondkleur;
+        }
+        private void set_42_CijferGem_Achtergrondkleur(object instance, object Value)
+        {
+            var that = (global::TestEnv1.Model.CijferGem)instance;
+            that.Achtergrondkleur = (global::System.String)Value;
+        }
+        private object get_43_LoginViewModel_SelectedComboboxItem(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.SelectedComboboxItem;
+        }
+        private void set_43_LoginViewModel_SelectedComboboxItem(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.SelectedComboboxItem = (global::SOMTodayUWP.Models.Instellingen)Value;
+        }
+        private object get_44_LoginViewModel_Schools(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Schools;
+        }
+        private void set_44_LoginViewModel_Schools(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Schools = (global::System.Collections.ObjectModel.ObservableCollection<global::SOMTodayUWP.Models.Instellingen>)Value;
+        }
+        private object get_45_Instellingen_naam(object instance)
+        {
+            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
+            return that.naam;
+        }
+        private void set_45_Instellingen_naam(object instance, object Value)
+        {
+            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
+            that.naam = (global::System.String)Value;
+        }
+        private object get_46_Instellingen_plaats(object instance)
+        {
+            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
+            return that.plaats;
+        }
+        private void set_46_Instellingen_plaats(object instance, object Value)
+        {
+            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
+            that.plaats = (global::System.String)Value;
+        }
+        private object get_47_Instellingen_uuid(object instance)
+        {
+            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
+            return that.uuid;
+        }
+        private void set_47_Instellingen_uuid(object instance, object Value)
+        {
+            var that = (global::SOMTodayUWP.Models.Instellingen)instance;
+            that.uuid = (global::System.String)Value;
+        }
+        private object get_48_LoginViewModel_Username(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Username;
+        }
+        private void set_48_LoginViewModel_Username(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Username = (global::System.String)Value;
+        }
+        private object get_49_LoginViewModel_UUID(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.UUID;
+        }
+        private void set_49_LoginViewModel_UUID(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.UUID = (global::System.String)Value;
+        }
+        private object get_50_LoginViewModel_Password(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Password;
+        }
+        private void set_50_LoginViewModel_Password(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Password = (global::System.String)Value;
+        }
+        private object get_51_LoginViewModel_RememberLoginData(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.RememberLoginData;
+        }
+        private void set_51_LoginViewModel_RememberLoginData(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.RememberLoginData = (global::System.Boolean)Value;
+        }
+        private object get_52_LoginViewModel_Title(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Title;
+        }
+        private void set_52_LoginViewModel_Title(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Title = (global::System.String)Value;
+        }
+        private object get_53_LoginViewModel_Sub(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Sub;
+        }
+        private void set_53_LoginViewModel_Sub(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Sub = (global::System.String)Value;
+        }
+        private object get_54_LoginViewModel_Paragraph(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Paragraph;
+        }
+        private void set_54_LoginViewModel_Paragraph(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Paragraph = (global::System.String)Value;
+        }
+        private object get_55_LoginViewModel_Button_read(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Button_read;
+        }
+        private void set_55_LoginViewModel_Button_read(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Button_read = (global::System.String)Value;
+        }
+        private object get_56_LoginViewModel_OrLogin(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.OrLogin;
+        }
+        private void set_56_LoginViewModel_OrLogin(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.OrLogin = (global::System.String)Value;
+        }
+        private object get_57_LoginViewModel_ChooseSchool(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.ChooseSchool;
+        }
+        private void set_57_LoginViewModel_ChooseSchool(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.ChooseSchool = (global::System.String)Value;
+        }
+        private object get_58_LoginViewModel_UsernameBox(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.UsernameBox;
+        }
+        private void set_58_LoginViewModel_UsernameBox(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.UsernameBox = (global::System.String)Value;
+        }
+        private object get_59_LoginViewModel_PasswordBox(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.PasswordBox;
+        }
+        private void set_59_LoginViewModel_PasswordBox(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.PasswordBox = (global::System.String)Value;
+        }
+        private object get_60_LoginViewModel_RememberMe(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.RememberMe;
+        }
+        private void set_60_LoginViewModel_RememberMe(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.RememberMe = (global::System.String)Value;
+        }
+        private object get_61_LoginViewModel_Login_button(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.Login_button;
+        }
+        private void set_61_LoginViewModel_Login_button(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.Login_button = (global::System.String)Value;
+        }
+        private object get_62_LoginViewModel_ChooseLang(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.ChooseLang;
+        }
+        private void set_62_LoginViewModel_ChooseLang(object instance, object Value)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            that.ChooseLang = (global::System.String)Value;
+        }
+        private object get_63_LoginViewModel_DoSOMLogin(object instance)
+        {
+            var that = (global::TestEnv1.ViewModel.LoginViewModel)instance;
+            return that.DoSOMLogin;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -1480,296 +1523,314 @@ namespace TestEnv1.TestEnv1_XamlTypeInfo
                 xamlMember.Getter = get_13_BootStrapper_ModalContent;
                 xamlMember.Setter = set_13_BootStrapper_ModalContent;
                 break;
+            case "TestEnv1.ViewModel.MainPageViewModel.Username":
+                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
+                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Username", "String");
+                xamlMember.Getter = get_14_MainPageViewModel_Username;
+                xamlMember.Setter = set_14_MainPageViewModel_Username;
+                break;
+            case "TestEnv1.ViewModel.MainPageViewModel.Password":
+                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
+                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Password", "String");
+                xamlMember.Getter = get_15_MainPageViewModel_Password;
+                xamlMember.Setter = set_15_MainPageViewModel_Password;
+                break;
             case "TestEnv1.ViewModel.MainPageViewModel.Title":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_14_MainPageViewModel_Title;
-                xamlMember.Setter = set_14_MainPageViewModel_Title;
+                xamlMember.Getter = get_16_MainPageViewModel_Title;
+                xamlMember.Setter = set_16_MainPageViewModel_Title;
                 break;
             case "TestEnv1.ViewModel.MainPageViewModel.Home":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Home", "String");
-                xamlMember.Getter = get_15_MainPageViewModel_Home;
-                xamlMember.Setter = set_15_MainPageViewModel_Home;
+                xamlMember.Getter = get_17_MainPageViewModel_Home;
+                xamlMember.Setter = set_17_MainPageViewModel_Home;
                 break;
             case "TestEnv1.ViewModel.MainPageViewModel.Grade":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Grade", "String");
-                xamlMember.Getter = get_16_MainPageViewModel_Grade;
-                xamlMember.Setter = set_16_MainPageViewModel_Grade;
+                xamlMember.Getter = get_18_MainPageViewModel_Grade;
+                xamlMember.Setter = set_18_MainPageViewModel_Grade;
                 break;
             case "TestEnv1.ViewModel.MainPageViewModel.Huiswerk":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Huiswerk", "String");
-                xamlMember.Getter = get_17_MainPageViewModel_Huiswerk;
-                xamlMember.Setter = set_17_MainPageViewModel_Huiswerk;
+                xamlMember.Getter = get_19_MainPageViewModel_Huiswerk;
+                xamlMember.Setter = set_19_MainPageViewModel_Huiswerk;
                 break;
             case "TestEnv1.ViewModel.MainPageViewModel.Rooster":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Rooster", "String");
-                xamlMember.Getter = get_18_MainPageViewModel_Rooster;
-                xamlMember.Setter = set_18_MainPageViewModel_Rooster;
+                xamlMember.Getter = get_20_MainPageViewModel_Rooster;
+                xamlMember.Setter = set_20_MainPageViewModel_Rooster;
                 break;
             case "TestEnv1.ViewModel.MainPageViewModel.Vakken":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.MainPageViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Vakken", "String");
-                xamlMember.Getter = get_19_MainPageViewModel_Vakken;
-                xamlMember.Setter = set_19_MainPageViewModel_Vakken;
+                xamlMember.Getter = get_21_MainPageViewModel_Vakken;
+                xamlMember.Setter = set_21_MainPageViewModel_Vakken;
+                break;
+            case "Template10.Mvvm.ViewModelBase.NavigationService":
+                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
+                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "NavigationService", "Template10.Services.NavigationService.INavigationService");
+                xamlMember.Getter = get_22_ViewModelBase_NavigationService;
+                xamlMember.Setter = set_22_ViewModelBase_NavigationService;
+                break;
+            case "Template10.Mvvm.ViewModelBase.Dispatcher":
+                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
+                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Dispatcher", "Template10.Common.IDispatcherWrapper");
+                xamlMember.Getter = get_23_ViewModelBase_Dispatcher;
+                xamlMember.Setter = set_23_ViewModelBase_Dispatcher;
+                break;
+            case "Template10.Mvvm.ViewModelBase.SessionState":
+                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
+                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "SessionState", "Template10.Common.IStateItems");
+                xamlMember.Getter = get_24_ViewModelBase_SessionState;
+                xamlMember.Setter = set_24_ViewModelBase_SessionState;
                 break;
             case "Template10.Controls.PageHeader.VisualStateNarrowMinWidth":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "VisualStateNarrowMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_20_PageHeader_VisualStateNarrowMinWidth;
-                xamlMember.Setter = set_20_PageHeader_VisualStateNarrowMinWidth;
+                xamlMember.Getter = get_25_PageHeader_VisualStateNarrowMinWidth;
+                xamlMember.Setter = set_25_PageHeader_VisualStateNarrowMinWidth;
                 break;
             case "Template10.Controls.PageHeader.VisualStateNormalMinWidth":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "VisualStateNormalMinWidth", "Double");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_21_PageHeader_VisualStateNormalMinWidth;
-                xamlMember.Setter = set_21_PageHeader_VisualStateNormalMinWidth;
+                xamlMember.Getter = get_26_PageHeader_VisualStateNormalMinWidth;
+                xamlMember.Setter = set_26_PageHeader_VisualStateNormalMinWidth;
                 break;
             case "Template10.Controls.PageHeader.EllipsisVisibility":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "EllipsisVisibility", "Template10.Behaviors.EllipsisBehavior.Visibilities");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_22_PageHeader_EllipsisVisibility;
-                xamlMember.Setter = set_22_PageHeader_EllipsisVisibility;
+                xamlMember.Getter = get_27_PageHeader_EllipsisVisibility;
+                xamlMember.Setter = set_27_PageHeader_EllipsisVisibility;
                 break;
             case "Template10.Controls.PageHeader.PrimaryCommandsVisibility":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "PrimaryCommandsVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_23_PageHeader_PrimaryCommandsVisibility;
-                xamlMember.Setter = set_23_PageHeader_PrimaryCommandsVisibility;
+                xamlMember.Getter = get_28_PageHeader_PrimaryCommandsVisibility;
+                xamlMember.Setter = set_28_PageHeader_PrimaryCommandsVisibility;
                 break;
             case "Template10.Controls.PageHeader.BackButtonVisibility":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "BackButtonVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_24_PageHeader_BackButtonVisibility;
-                xamlMember.Setter = set_24_PageHeader_BackButtonVisibility;
+                xamlMember.Getter = get_29_PageHeader_BackButtonVisibility;
+                xamlMember.Setter = set_29_PageHeader_BackButtonVisibility;
                 break;
             case "Template10.Controls.PageHeader.BackButtonContent":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "BackButtonContent", "Windows.UI.Xaml.Controls.Symbol");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_25_PageHeader_BackButtonContent;
-                xamlMember.Setter = set_25_PageHeader_BackButtonContent;
+                xamlMember.Getter = get_30_PageHeader_BackButtonContent;
+                xamlMember.Setter = set_30_PageHeader_BackButtonContent;
                 break;
             case "Template10.Controls.PageHeader.Frame":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Frame", "Windows.UI.Xaml.Controls.Frame");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_26_PageHeader_Frame;
-                xamlMember.Setter = set_26_PageHeader_Frame;
+                xamlMember.Getter = get_31_PageHeader_Frame;
+                xamlMember.Setter = set_31_PageHeader_Frame;
                 break;
             case "Template10.Controls.PageHeader.EnableHamburgerMenuAutoLayout":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "EnableHamburgerMenuAutoLayout", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_27_PageHeader_EnableHamburgerMenuAutoLayout;
-                xamlMember.Setter = set_27_PageHeader_EnableHamburgerMenuAutoLayout;
+                xamlMember.Getter = get_32_PageHeader_EnableHamburgerMenuAutoLayout;
+                xamlMember.Setter = set_32_PageHeader_EnableHamburgerMenuAutoLayout;
                 break;
             case "Template10.Controls.PageHeader.Text":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.PageHeader");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Text", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_28_PageHeader_Text;
-                xamlMember.Setter = set_28_PageHeader_Text;
+                xamlMember.Getter = get_33_PageHeader_Text;
+                xamlMember.Setter = set_33_PageHeader_Text;
                 break;
             case "Windows.UI.Color.A":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "A", "Byte");
-                xamlMember.Getter = get_29_Color_A;
-                xamlMember.Setter = set_29_Color_A;
+                xamlMember.Getter = get_34_Color_A;
+                xamlMember.Setter = set_34_Color_A;
                 break;
             case "Windows.UI.Color.B":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "B", "Byte");
-                xamlMember.Getter = get_30_Color_B;
-                xamlMember.Setter = set_30_Color_B;
+                xamlMember.Getter = get_35_Color_B;
+                xamlMember.Setter = set_35_Color_B;
                 break;
             case "Windows.UI.Color.G":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "G", "Byte");
-                xamlMember.Getter = get_31_Color_G;
-                xamlMember.Setter = set_31_Color_G;
+                xamlMember.Getter = get_36_Color_G;
+                xamlMember.Setter = set_36_Color_G;
                 break;
             case "Windows.UI.Color.R":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "R", "Byte");
-                xamlMember.Getter = get_32_Color_R;
-                xamlMember.Setter = set_32_Color_R;
+                xamlMember.Getter = get_37_Color_R;
+                xamlMember.Setter = set_37_Color_R;
                 break;
             case "TestEnv1.ViewModel.CijferViewModel.Cijfers":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.CijferViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Cijfers", "System.Collections.ObjectModel.ObservableCollection`1<TestEnv1.Model.CijferGem>");
-                xamlMember.Getter = get_33_CijferViewModel_Cijfers;
-                xamlMember.Setter = set_33_CijferViewModel_Cijfers;
+                xamlMember.Getter = get_38_CijferViewModel_Cijfers;
+                xamlMember.Setter = set_38_CijferViewModel_Cijfers;
                 break;
             case "TestEnv1.Model.CijferGem.Vaknaam":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.Model.CijferGem");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Vaknaam", "String");
-                xamlMember.Getter = get_34_CijferGem_Vaknaam;
-                xamlMember.Setter = set_34_CijferGem_Vaknaam;
+                xamlMember.Getter = get_39_CijferGem_Vaknaam;
+                xamlMember.Setter = set_39_CijferGem_Vaknaam;
                 break;
             case "TestEnv1.Model.CijferGem.Laatste_Cijfer":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.Model.CijferGem");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Laatste_Cijfer", "String");
-                xamlMember.Getter = get_35_CijferGem_Laatste_Cijfer;
-                xamlMember.Setter = set_35_CijferGem_Laatste_Cijfer;
+                xamlMember.Getter = get_40_CijferGem_Laatste_Cijfer;
+                xamlMember.Setter = set_40_CijferGem_Laatste_Cijfer;
                 break;
             case "TestEnv1.Model.CijferGem.Gem":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.Model.CijferGem");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Gem", "String");
-                xamlMember.Getter = get_36_CijferGem_Gem;
-                xamlMember.Setter = set_36_CijferGem_Gem;
+                xamlMember.Getter = get_41_CijferGem_Gem;
+                xamlMember.Setter = set_41_CijferGem_Gem;
                 break;
             case "TestEnv1.Model.CijferGem.Achtergrondkleur":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.Model.CijferGem");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Achtergrondkleur", "String");
-                xamlMember.Getter = get_37_CijferGem_Achtergrondkleur;
-                xamlMember.Setter = set_37_CijferGem_Achtergrondkleur;
+                xamlMember.Getter = get_42_CijferGem_Achtergrondkleur;
+                xamlMember.Setter = set_42_CijferGem_Achtergrondkleur;
+                break;
+            case "TestEnv1.ViewModel.LoginViewModel.SelectedComboboxItem":
+                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
+                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "SelectedComboboxItem", "SOMTodayUWP.Models.Instellingen");
+                xamlMember.Getter = get_43_LoginViewModel_SelectedComboboxItem;
+                xamlMember.Setter = set_43_LoginViewModel_SelectedComboboxItem;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Schools":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Schools", "System.Collections.ObjectModel.ObservableCollection`1<SOMTodayUWP.Models.Instellingen>");
-                xamlMember.Getter = get_38_LoginViewModel_Schools;
-                xamlMember.Setter = set_38_LoginViewModel_Schools;
+                xamlMember.Getter = get_44_LoginViewModel_Schools;
+                xamlMember.Setter = set_44_LoginViewModel_Schools;
                 break;
             case "SOMTodayUWP.Models.Instellingen.naam":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SOMTodayUWP.Models.Instellingen");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "naam", "String");
-                xamlMember.Getter = get_39_Instellingen_naam;
-                xamlMember.Setter = set_39_Instellingen_naam;
+                xamlMember.Getter = get_45_Instellingen_naam;
+                xamlMember.Setter = set_45_Instellingen_naam;
                 break;
             case "SOMTodayUWP.Models.Instellingen.plaats":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SOMTodayUWP.Models.Instellingen");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "plaats", "String");
-                xamlMember.Getter = get_40_Instellingen_plaats;
-                xamlMember.Setter = set_40_Instellingen_plaats;
+                xamlMember.Getter = get_46_Instellingen_plaats;
+                xamlMember.Setter = set_46_Instellingen_plaats;
                 break;
             case "SOMTodayUWP.Models.Instellingen.uuid":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("SOMTodayUWP.Models.Instellingen");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "uuid", "String");
-                xamlMember.Getter = get_41_Instellingen_uuid;
-                xamlMember.Setter = set_41_Instellingen_uuid;
+                xamlMember.Getter = get_47_Instellingen_uuid;
+                xamlMember.Setter = set_47_Instellingen_uuid;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Username":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Username", "String");
-                xamlMember.Getter = get_42_LoginViewModel_Username;
-                xamlMember.Setter = set_42_LoginViewModel_Username;
+                xamlMember.Getter = get_48_LoginViewModel_Username;
+                xamlMember.Setter = set_48_LoginViewModel_Username;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.UUID":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "UUID", "String");
-                xamlMember.Getter = get_43_LoginViewModel_UUID;
-                xamlMember.Setter = set_43_LoginViewModel_UUID;
+                xamlMember.Getter = get_49_LoginViewModel_UUID;
+                xamlMember.Setter = set_49_LoginViewModel_UUID;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Password":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Password", "String");
-                xamlMember.Getter = get_44_LoginViewModel_Password;
-                xamlMember.Setter = set_44_LoginViewModel_Password;
+                xamlMember.Getter = get_50_LoginViewModel_Password;
+                xamlMember.Setter = set_50_LoginViewModel_Password;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.RememberLoginData":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "RememberLoginData", "Boolean");
-                xamlMember.Getter = get_45_LoginViewModel_RememberLoginData;
-                xamlMember.Setter = set_45_LoginViewModel_RememberLoginData;
+                xamlMember.Getter = get_51_LoginViewModel_RememberLoginData;
+                xamlMember.Setter = set_51_LoginViewModel_RememberLoginData;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Title":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_46_LoginViewModel_Title;
-                xamlMember.Setter = set_46_LoginViewModel_Title;
+                xamlMember.Getter = get_52_LoginViewModel_Title;
+                xamlMember.Setter = set_52_LoginViewModel_Title;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Sub":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Sub", "String");
-                xamlMember.Getter = get_47_LoginViewModel_Sub;
-                xamlMember.Setter = set_47_LoginViewModel_Sub;
+                xamlMember.Getter = get_53_LoginViewModel_Sub;
+                xamlMember.Setter = set_53_LoginViewModel_Sub;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Paragraph":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Paragraph", "String");
-                xamlMember.Getter = get_48_LoginViewModel_Paragraph;
-                xamlMember.Setter = set_48_LoginViewModel_Paragraph;
+                xamlMember.Getter = get_54_LoginViewModel_Paragraph;
+                xamlMember.Setter = set_54_LoginViewModel_Paragraph;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Button_read":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Button_read", "String");
-                xamlMember.Getter = get_49_LoginViewModel_Button_read;
-                xamlMember.Setter = set_49_LoginViewModel_Button_read;
+                xamlMember.Getter = get_55_LoginViewModel_Button_read;
+                xamlMember.Setter = set_55_LoginViewModel_Button_read;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.OrLogin":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "OrLogin", "String");
-                xamlMember.Getter = get_50_LoginViewModel_OrLogin;
-                xamlMember.Setter = set_50_LoginViewModel_OrLogin;
+                xamlMember.Getter = get_56_LoginViewModel_OrLogin;
+                xamlMember.Setter = set_56_LoginViewModel_OrLogin;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.ChooseSchool":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "ChooseSchool", "String");
-                xamlMember.Getter = get_51_LoginViewModel_ChooseSchool;
-                xamlMember.Setter = set_51_LoginViewModel_ChooseSchool;
+                xamlMember.Getter = get_57_LoginViewModel_ChooseSchool;
+                xamlMember.Setter = set_57_LoginViewModel_ChooseSchool;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.UsernameBox":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "UsernameBox", "String");
-                xamlMember.Getter = get_52_LoginViewModel_UsernameBox;
-                xamlMember.Setter = set_52_LoginViewModel_UsernameBox;
+                xamlMember.Getter = get_58_LoginViewModel_UsernameBox;
+                xamlMember.Setter = set_58_LoginViewModel_UsernameBox;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.PasswordBox":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "PasswordBox", "String");
-                xamlMember.Getter = get_53_LoginViewModel_PasswordBox;
-                xamlMember.Setter = set_53_LoginViewModel_PasswordBox;
+                xamlMember.Getter = get_59_LoginViewModel_PasswordBox;
+                xamlMember.Setter = set_59_LoginViewModel_PasswordBox;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.RememberMe":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "RememberMe", "String");
-                xamlMember.Getter = get_54_LoginViewModel_RememberMe;
-                xamlMember.Setter = set_54_LoginViewModel_RememberMe;
+                xamlMember.Getter = get_60_LoginViewModel_RememberMe;
+                xamlMember.Setter = set_60_LoginViewModel_RememberMe;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.Login_button":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Login_button", "String");
-                xamlMember.Getter = get_55_LoginViewModel_Login_button;
-                xamlMember.Setter = set_55_LoginViewModel_Login_button;
+                xamlMember.Getter = get_61_LoginViewModel_Login_button;
+                xamlMember.Setter = set_61_LoginViewModel_Login_button;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.ChooseLang":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "ChooseLang", "String");
-                xamlMember.Getter = get_56_LoginViewModel_ChooseLang;
-                xamlMember.Setter = set_56_LoginViewModel_ChooseLang;
+                xamlMember.Getter = get_62_LoginViewModel_ChooseLang;
+                xamlMember.Setter = set_62_LoginViewModel_ChooseLang;
                 break;
             case "TestEnv1.ViewModel.LoginViewModel.DoSOMLogin":
                 userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("TestEnv1.ViewModel.LoginViewModel");
                 xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "DoSOMLogin", "Template10.Mvvm.DelegateCommand");
-                xamlMember.Getter = get_57_LoginViewModel_DoSOMLogin;
+                xamlMember.Getter = get_63_LoginViewModel_DoSOMLogin;
                 xamlMember.SetIsReadOnly();
-                break;
-            case "Template10.Mvvm.ViewModelBase.NavigationService":
-                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
-                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "NavigationService", "Template10.Services.NavigationService.INavigationService");
-                xamlMember.Getter = get_58_ViewModelBase_NavigationService;
-                xamlMember.Setter = set_58_ViewModelBase_NavigationService;
-                break;
-            case "Template10.Mvvm.ViewModelBase.Dispatcher":
-                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
-                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "Dispatcher", "Template10.Common.IDispatcherWrapper");
-                xamlMember.Getter = get_59_ViewModelBase_Dispatcher;
-                xamlMember.Setter = set_59_ViewModelBase_Dispatcher;
-                break;
-            case "Template10.Mvvm.ViewModelBase.SessionState":
-                userType = (global::TestEnv1.TestEnv1_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
-                xamlMember = new global::TestEnv1.TestEnv1_XamlTypeInfo.XamlMember(this, "SessionState", "Template10.Common.IStateItems");
-                xamlMember.Getter = get_60_ViewModelBase_SessionState;
-                xamlMember.Setter = set_60_ViewModelBase_SessionState;
                 break;
             }
             return xamlMember;

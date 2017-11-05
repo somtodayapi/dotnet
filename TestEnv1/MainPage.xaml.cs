@@ -30,27 +30,14 @@ namespace TestEnv1
            
             ApplicationLanguages.PrimaryLanguageOverride = "nl";
             this.InitializeComponent();
-           
+            NavigationCacheMode = NavigationCacheMode.Enabled;
+
             viewModel = new MainPageViewModel();
 
         }
-        private bool isLoggedin()
-        {
-            bool bool1 = false;
-            return bool1;
-        }
         private void NavView_Loaded(object sender, RoutedEventArgs e)
         {
-            if (isLoggedin() == false)
-            {
-                this.Frame.Navigate(typeof(Views.Inloggen));
-            }
-            else
-            {
-                gr.IsEnabled = false;
-                hw.IsEnabled = false;
-                sch.IsEnabled = false;
-            }
+          
             // you can also add items in code behind
             NavView.MenuItems.Add(new NavigationViewItemSeparator());
             NavView.MenuItems.Add(new NavigationViewItem()
@@ -79,7 +66,7 @@ namespace TestEnv1
                 switch (args.InvokedItem)
                 {
                     case "Home":
-                        ContentFrame.Navigate(typeof(Views.Inloggen));
+                        ContentFrame.Navigate(typeof(Views.Home));
                         break;
 
                     case "cijfer":
@@ -100,6 +87,8 @@ namespace TestEnv1
                 }
             }
         }
+
+   
 
         private void NavView_SelectionChanged(NavigationView sender, NavigationViewSelectionChangedEventArgs args)
         {

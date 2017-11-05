@@ -6,6 +6,7 @@
     <RootPropertyPathName Name="DropDownOffset" />
     <RootPropertyPathName Name="PlaceholderForeground" />
     <RootPropertyPathName Name="DropDownContentMinWidth" />
+    <RootPropertyPathName Name="DoSOMLogin" />
     <RootPropertyPathName Name="RememberLoginData" />
     <RootPropertyPathName Name="Username" />
   </Roots.PropertyPathNames>
@@ -195,6 +196,7 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Style" />
       <RootProperty Name="Visibility" />
+      <RootProperty Name="Command" />
       <RootProperty Name="Content" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="FontWeight" />
@@ -321,6 +323,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="Style" />
+      <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="ItemContainerStyle" />
@@ -563,6 +566,7 @@
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.MenuFlyoutSeparator" />
     <RootType FullName="TestEnv1.Views.Cijfer" />
+    <RootType FullName="TestEnv1.Views.Home" />
     <RootType FullName="TestEnv1.ViewModel.LoginViewModel" />
     <RootType FullName="Windows.UI.Xaml.Media.Animation.RepositionThemeTransition" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
